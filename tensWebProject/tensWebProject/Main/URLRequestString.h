@@ -14,4 +14,6 @@
 #define TSBackcell   @"https://api.weibo.com/oauth2/default.html"
 #define AccTokenRequest @"https://api.weibo.com/oauth2/access_token"
 
+/*请求微博数据*/
+#define TSWeiboUrl   @"https://api.weibo.com/2/statuses/friends_timeline.json"
 #endif
