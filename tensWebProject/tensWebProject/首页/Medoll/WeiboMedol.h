@@ -32,4 +32,7 @@
 /*微博作者的用户信息字段*/
 @property (nonatomic,strong)UserMedol *user;
 
+/*微博Id号*/
+@property (nonatomic,copy)NSString *idstr;
+
 @end

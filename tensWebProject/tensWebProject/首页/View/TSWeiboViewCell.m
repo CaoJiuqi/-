@@ -10,6 +10,7 @@
 #import "WeiboMedol.h"
 #import "UserMedol.h"
 
+
 @interface TSWeiboViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (weak, nonatomic) IBOutlet UILabel *UserNameLable;
