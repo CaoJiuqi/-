@@ -31,12 +31,6 @@
 - (void)awakeFromNib {
     self.toolView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.toolView.layer.borderWidth = 0.5;
-
-
-    
-    
-    
-
 }
 
 -(void)setWeiboMedol:(WeiboMedol *)weiboMedol
