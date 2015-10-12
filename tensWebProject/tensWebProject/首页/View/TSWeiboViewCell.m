@@ -9,9 +9,18 @@
 #import "TSWeiboViewCell.h"
 #import "WeiboMedol.h"
 #import "UserMedol.h"
+#import "weiboImageView.h"
+#import "HZPhotoBrowser.h"
 
+#define imageWedth (TSWedth -30)/3 // 每张图片的高度
+#define imageSpace 5 // 图片之间的间距
+
+#define OtherSpace 130 //其他视图的高度
 
 @interface TSWeiboViewCell ()
+{
+    NSArray *_nibArray ;
+}
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (weak, nonatomic) IBOutlet UILabel *UserNameLable;
 @property (weak, nonatomic) IBOutlet UIImageView *leavelImageView;
@@ -23,6 +32,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
 @property (weak, nonatomic) IBOutlet UIButton *commentsButton;
 @property (weak, nonatomic) IBOutlet UIButton *goodButton;
+@property (weak, nonatomic) IBOutlet UIView *bgImageView;
+@property (strong,nonatomic)weiboImageView *weiboImageView;
 
 @end
 
@@ -31,6 +42,11 @@
 - (void)awakeFromNib {
     self.toolView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.toolView.layer.borderWidth = 0.5;
+
+
+    
+    _nibArray = [[NSBundle mainBundle]loadNibNamed:@"weiboImageView" owner:self options:nil];
+    
 }
 
 -(void)setWeiboMedol:(WeiboMedol *)weiboMedol
@@ -41,7 +57,10 @@
     self.UserNameLable.text = _weiboMedol.user.screen_name;
     self.timeLable.text = _weiboMedol.created_at;
     self.sourceLable.text = _weiboMedol.source;
+    
     self.contentTextview.text = _weiboMedol.text;
+    
+    
 
     if ([_weiboMedol.reposts_count integerValue] > 0) {
         NSString *sharetitle=[NSString stringWithFormat:@"%@",_weiboMedol.reposts_count];
@@ -58,15 +77,88 @@
         NSString *goodstr = [NSString stringWithFormat:@"%@",_weiboMedol.attitudes_count];
         [self.goodButton setTitle:goodstr forState:UIControlStateNormal];
     }
+
+    // 将之前的视图移除
+    [self.weiboImageView removeFromSuperview];
+    
+    // 添加图片视图
+    if (weiboMedol.pic_urls.count > 0) {
+        [self showWeiboImage];
+    }
+    
+    
     
 }
+
+#pragma mark -- 显示微博图片
+-(void)showWeiboImage
+{
+    int count = (int)[self.weiboMedol.pic_urls count];
+    if( count== 1 )
+    {
+        self.weiboImageView =  _nibArray[0];
+        self.weiboImageView.imageImageURLs = _weiboMedol.pic_urls;
+        self.weiboImageView.height = 150 ;
+        self.weiboImageView.width = 150;
+        [self.bgImageView addSubview:self.weiboImageView];
+    }else if(count == 4)
+    {
+        self.weiboImageView =  _nibArray[1];
+        self.weiboImageView.imageImageURLs = _weiboMedol.pic_urls;
+        self.weiboImageView.width =imageWedth * 2  + imageSpace ;
+        self.weiboImageView.height = self.weiboImageView.width;
+        [self.bgImageView addSubview:self.weiboImageView];
+    
+    }else
+    {
+        self.weiboImageView =  _nibArray[2];
+        self.weiboImageView.imageImageURLs = _weiboMedol.pic_urls;
+        self.weiboImageView.width = TSWedth - 20 ;
+        self.weiboImageView.height = self.weiboImageView.width ;
+        [self.bgImageView addSubview:self.weiboImageView];
+    }
+}
+
 
 +(CGFloat)showrangHeight:(WeiboMedol *)medol
 {
     
     CGRect rect =[medol.text boundingRectWithSize:CGSizeMake(TSWedth - 20, MAXFLOAT)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]}context:nil];
-    return rect.size.height + 125;
+    
+   CGFloat imageHeight =  [self setImageViewHeight:medol];
 
+    
+    if (imageHeight != 0) {
+        imageHeight += 15;
+    }
+    
+    
+    return ceilf(rect.size.height) + OtherSpace + imageHeight;
+
+}
+
+// 计算 微博图片视图的高度
++ (CGFloat)setImageViewHeight:(WeiboMedol *)medol
+{
+    CGFloat  count = medol.pic_urls.count;
+
+    if (count == 0) {
+        return 0;
+    }else if (count == 1) {
+        
+        return 150;
+    }else if(count <= 3)
+    {
+        return imageWedth ;
+        
+    }else if( count >3 && count < 7)
+    {
+        return imageWedth * 2 + imageSpace;
+
+    }
+    
+        return imageWedth * 3 + imageSpace * 2 ;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

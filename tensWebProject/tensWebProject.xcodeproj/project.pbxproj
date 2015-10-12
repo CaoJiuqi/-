@@ -13,6 +13,11 @@
 		15077CFD1BC2E74800616E47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15077CFC1BC2E74800616E47 /* Images.xcassets */; };
 		15077D001BC2E74800616E47 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15077CFE1BC2E74800616E47 /* LaunchScreen.xib */; };
 		15077D0C1BC2E74800616E47 /* tensWebProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15077D0B1BC2E74800616E47 /* tensWebProjectTests.m */; };
+		151B46011BC9DF5200E22DEE /* HZIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151B45FA1BC9DF5200E22DEE /* HZIndicatorView.m */; };
+		151B46021BC9DF5200E22DEE /* HZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 151B45FC1BC9DF5200E22DEE /* HZPhotoBrowser.m */; };
+		151B46031BC9DF5200E22DEE /* HZPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151B45FF1BC9DF5200E22DEE /* HZPhotoBrowserView.m */; };
+		151B46041BC9DF5200E22DEE /* whiteplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 151B46001BC9DF5200E22DEE /* whiteplaceholder.png */; };
+		1527D5191BCA0AE70042C89E /* WeiboImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527D5181BCA0AE70042C89E /* WeiboImage.m */; };
 		154913761BC59BD5002F16FC /* WebRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154913751BC59BD5002F16FC /* WebRequestController.m */; };
 		154B11231BC2FDB70018C96E /* TSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B11221BC2FDB70018C96E /* TSTabBarController.m */; };
 		154B11261BC2FDFC0018C96E /* TSNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B11251BC2FDFC0018C96E /* TSNavgationController.m */; };
@@ -73,6 +78,8 @@
 		15EDFAB81BC6D4AA00259791 /* UIWindow+enterRooterConllor.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EDFAB71BC6D4AA00259791 /* UIWindow+enterRooterConllor.m */; };
 		15EDFB511BC72E3000259791 /* WeiboMedol.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EDFB501BC72E3000259791 /* WeiboMedol.m */; };
 		15EDFB541BC7337B00259791 /* UserMedol.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EDFB531BC7337B00259791 /* UserMedol.m */; };
+		15F1108F1BC979DA00D3BCF3 /* weiboImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F1108E1BC979DA00D3BCF3 /* weiboImageView.m */; };
+		15F110911BC979E700D3BCF3 /* weiboImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F110901BC979E700D3BCF3 /* weiboImageView.xib */; };
 		15FDBD321BC4357700B05109 /* TSPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FDBD311BC4357700B05109 /* TSPopView.m */; };
 		15FDBD391BC493EE00B05109 /* SendWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FDBD381BC493EE00B05109 /* SendWebView.m */; };
 /* End PBXBuildFile section */
@@ -99,6 +106,16 @@
 		15077D051BC2E74800616E47 /* tensWebProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tensWebProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15077D0A1BC2E74800616E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15077D0B1BC2E74800616E47 /* tensWebProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tensWebProjectTests.m; sourceTree = "<group>"; };
+		151B45F91BC9DF5200E22DEE /* HZIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZIndicatorView.h; sourceTree = "<group>"; };
+		151B45FA1BC9DF5200E22DEE /* HZIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZIndicatorView.m; sourceTree = "<group>"; };
+		151B45FB1BC9DF5200E22DEE /* HZPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowser.h; sourceTree = "<group>"; };
+		151B45FC1BC9DF5200E22DEE /* HZPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowser.m; sourceTree = "<group>"; };
+		151B45FD1BC9DF5200E22DEE /* HZPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		151B45FE1BC9DF5200E22DEE /* HZPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserView.h; sourceTree = "<group>"; };
+		151B45FF1BC9DF5200E22DEE /* HZPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowserView.m; sourceTree = "<group>"; };
+		151B46001BC9DF5200E22DEE /* whiteplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteplaceholder.png; sourceTree = "<group>"; };
+		1527D5171BCA0AE70042C89E /* WeiboImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboImage.h; sourceTree = "<group>"; };
+		1527D5181BCA0AE70042C89E /* WeiboImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboImage.m; sourceTree = "<group>"; };
 		154913731BC5998F002F16FC /* URLRequestString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLRequestString.h; sourceTree = "<group>"; };
 		154913741BC59BD5002F16FC /* WebRequestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestController.h; sourceTree = "<group>"; };
 		154913751BC59BD5002F16FC /* WebRequestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequestController.m; sourceTree = "<group>"; };
@@ -222,6 +239,9 @@
 		15EDFB501BC72E3000259791 /* WeiboMedol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboMedol.m; sourceTree = "<group>"; };
 		15EDFB521BC7337B00259791 /* UserMedol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMedol.h; sourceTree = "<group>"; };
 		15EDFB531BC7337B00259791 /* UserMedol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMedol.m; sourceTree = "<group>"; };
+		15F1108D1BC979DA00D3BCF3 /* weiboImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weiboImageView.h; sourceTree = "<group>"; };
+		15F1108E1BC979DA00D3BCF3 /* weiboImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiboImageView.m; sourceTree = "<group>"; };
+		15F110901BC979E700D3BCF3 /* weiboImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = weiboImageView.xib; sourceTree = "<group>"; };
 		15FDBD301BC4357700B05109 /* TSPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPopView.h; sourceTree = "<group>"; };
 		15FDBD311BC4357700B05109 /* TSPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPopView.m; sourceTree = "<group>"; };
 		15FDBD371BC493EE00B05109 /* SendWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendWebView.h; sourceTree = "<group>"; };
@@ -345,6 +365,11 @@
 				15CC34141BC82B06007FEBD3 /* TSWeiboViewCell.h */,
 				15CC34151BC82B06007FEBD3 /* TSWeiboViewCell.m */,
 				15CC34161BC82B06007FEBD3 /* TSWeiboViewCell.xib */,
+				15F1108D1BC979DA00D3BCF3 /* weiboImageView.h */,
+				15F1108E1BC979DA00D3BCF3 /* weiboImageView.m */,
+				15F110901BC979E700D3BCF3 /* weiboImageView.xib */,
+				1527D5171BCA0AE70042C89E /* WeiboImage.h */,
+				1527D5181BCA0AE70042C89E /* WeiboImage.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -449,6 +474,7 @@
 		15077D251BC2F51300616E47 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				151B45F81BC9DF5200E22DEE /* HZPhotoBrowser */,
 				15CC344B1BC8AA90007FEBD3 /* MJRefresh */,
 				15CC34191BC858F6007FEBD3 /* SDWebImage */,
 				15E73C521BC5D035004EB2B5 /* AFNetworking */,
@@ -473,6 +499,21 @@
 				15077CF91BC2E74800616E47 /* Main.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		151B45F81BC9DF5200E22DEE /* HZPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				151B45F91BC9DF5200E22DEE /* HZIndicatorView.h */,
+				151B45FA1BC9DF5200E22DEE /* HZIndicatorView.m */,
+				151B45FB1BC9DF5200E22DEE /* HZPhotoBrowser.h */,
+				151B45FC1BC9DF5200E22DEE /* HZPhotoBrowser.m */,
+				151B45FD1BC9DF5200E22DEE /* HZPhotoBrowserConfig.h */,
+				151B45FE1BC9DF5200E22DEE /* HZPhotoBrowserView.h */,
+				151B45FF1BC9DF5200E22DEE /* HZPhotoBrowserView.m */,
+				151B46001BC9DF5200E22DEE /* whiteplaceholder.png */,
+			);
+			path = HZPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		1549136F1BC59884002F16FC /* web授权 */ = {
@@ -788,7 +829,9 @@
 				15CC34181BC82B06007FEBD3 /* TSWeiboViewCell.xib in Resources */,
 				15077CFB1BC2E74800616E47 /* Main.storyboard in Resources */,
 				15077D001BC2E74800616E47 /* LaunchScreen.xib in Resources */,
+				15F110911BC979E700D3BCF3 /* weiboImageView.xib in Resources */,
 				15CC34861BC8AA91007FEBD3 /* MJRefresh.bundle in Resources */,
+				151B46041BC9DF5200E22DEE /* whiteplaceholder.png in Resources */,
 				15077CFD1BC2E74800616E47 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -810,13 +853,16 @@
 				15CC34451BC858F6007FEBD3 /* UIImage+GIF.m in Sources */,
 				15CC34821BC8AA91007FEBD3 /* MJRefreshBackStateFooter.m in Sources */,
 				154B112F1BC34D180018C96E /* TSSeachController.m in Sources */,
+				151B46021BC9DF5200E22DEE /* HZPhotoBrowser.m in Sources */,
 				154B11321BC36AAF0018C96E /* HomePageController.m in Sources */,
 				15CC347C1BC8AA91007FEBD3 /* MJRefreshHeader.m in Sources */,
 				15E73C711BC5EAA1004EB2B5 /* ArchiveModel.m in Sources */,
+				151B46011BC9DF5200E22DEE /* HZIndicatorView.m in Sources */,
 				15CC34801BC8AA91007FEBD3 /* MJRefreshBackGifFooter.m in Sources */,
 				15CC344A1BC858F6007FEBD3 /* UIView+WebCacheOperation.m in Sources */,
 				15CC347A1BC8AA91007FEBD3 /* MJRefreshComponent.m in Sources */,
 				15CC347D1BC8AA91007FEBD3 /* MJRefreshAutoGifFooter.m in Sources */,
+				151B46031BC9DF5200E22DEE /* HZPhotoBrowserView.m in Sources */,
 				15CC347F1BC8AA91007FEBD3 /* MJRefreshAutoStateFooter.m in Sources */,
 				15E73C671BC5D035004EB2B5 /* AFHTTPRequestOperationManager.m in Sources */,
 				15E73C741BC5EAE5004EB2B5 /* RequestMedol.m in Sources */,
@@ -827,6 +873,7 @@
 				15E73C6B1BC5D035004EB2B5 /* AFURLConnectionOperation.m in Sources */,
 				15CC34841BC8AA91007FEBD3 /* MJRefreshNormalHeader.m in Sources */,
 				15CC343E1BC858F6007FEBD3 /* SDWebImageCompat.m in Sources */,
+				15F1108F1BC979DA00D3BCF3 /* weiboImageView.m in Sources */,
 				15CC34791BC8AA91007FEBD3 /* MJRefreshBackFooter.m in Sources */,
 				15E73C4E1BC5CE07004EB2B5 /* TSBaseMedol.m in Sources */,
 				15CC34481BC858F6007FEBD3 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -836,6 +883,7 @@
 				15CC347B1BC8AA91007FEBD3 /* MJRefreshFooter.m in Sources */,
 				15CC34411BC858F6007FEBD3 /* SDWebImageDownloaderOperation.m in Sources */,
 				15E73C6C1BC5D035004EB2B5 /* AFURLRequestSerialization.m in Sources */,
+				1527D5191BCA0AE70042C89E /* WeiboImage.m in Sources */,
 				15CC34401BC858F6007FEBD3 /* SDWebImageDownloader.m in Sources */,
 				15CC34891BC8AA91007FEBD3 /* UIScrollView+MJRefresh.m in Sources */,
 				15CC347E1BC8AA91007FEBD3 /* MJRefreshAutoNormalFooter.m in Sources */,

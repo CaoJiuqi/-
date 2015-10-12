@@ -36,6 +36,17 @@
     _created_at = datestr;
 }
 
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key
+{
+
+    
+    if ([key isEqualToString:@"pic_ids"]) {
+        self.pic_urls = [[NSArray alloc]initWithObjects:value];   
+    }
+    
+    
+}
+
 -(void)setSource:(NSString *)source
 {
     // 截取来源数据的某一部分

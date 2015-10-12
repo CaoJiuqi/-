@@ -19,4 +19,6 @@
 /*缓存图片*/
 #import "UIImageView+WebCache.h"
 
+#import "UIView+Extension.h"
+
 #endif

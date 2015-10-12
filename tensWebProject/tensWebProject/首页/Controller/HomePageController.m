@@ -64,7 +64,7 @@ static NSString *cellID = @"TSWeiboViewCell";
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     [dic setObject:medol.access_token forKey:@"access_token"];
 
-    WeiboMedol *weibomodel =[self.weiboMedolArray lastObject ];
+    WeiboMedol *weibomodel =[self.weiboMedolArray firstObject ];
     if (weibomodel) {
         
         [dic setObject:weibomodel.idstr forKey:@"since_id" ];
@@ -90,12 +90,12 @@ static NSString *cellID = @"TSWeiboViewCell";
     NSMutableArray *newweiboModelArray = [[NSMutableArray alloc]init];
     NSMutableArray *modelData = dictionary[@"statuses"];
     
-    for (NSMutableDictionary *dic in modelData) {
+    for (NSDictionary *dic in modelData) {
         WeiboMedol *model = [[WeiboMedol alloc]initWithDictary:dic];
         [newweiboModelArray addObject:model];
     }
     
-    NSIndexSet *set = [[NSIndexSet alloc]initWithIndexesInRange:NSMakeRange(0, newweiboModelArray.count)];
+    NSIndexSet *set = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, newweiboModelArray.count)];
     [self.weiboMedolArray insertObjects:newweiboModelArray atIndexes:set];
     
     [self.tableView reloadData];
@@ -153,7 +153,11 @@ static NSString *cellID = @"TSWeiboViewCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TSWeiboViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    
+    
     cell.weiboMedol = self.weiboMedolArray[indexPath.row];
+
+    
     return cell;
 }
 

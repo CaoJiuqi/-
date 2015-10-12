@@ -35,4 +35,7 @@
 /*微博Id号*/
 @property (nonatomic,copy)NSString *idstr;
 
+/*微博图片*/
+@property (nonatomic,strong)NSArray *pic_urls;
+
 @end

@@ -10,6 +10,7 @@
 @class WeiboMedol;
 
 @interface TSWeiboViewCell : UITableViewCell
+
 @property (nonatomic,strong)WeiboMedol *weiboMedol;
 
 +(CGFloat)showrangHeight:(WeiboMedol *)medol;
