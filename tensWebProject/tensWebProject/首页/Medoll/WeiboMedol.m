@@ -44,6 +44,11 @@
         self.pic_urls = [[NSArray alloc]initWithArray:value];
     }
     
+    if ([key isEqualToString:@"retweeted_status"]) {
+        
+        self.retweetedWeibo = [[WeiboMedol alloc]initWithDictary:value];
+    }
+
     
 }
 

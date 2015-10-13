@@ -45,7 +45,6 @@
         NSString *imageName = [EmotionManager emotionPNGFromName:subString];
         
         if (imageName) {
-            
 //            NSLog(@"emotion: %@",imageName); 
             
             // 获取表情名称所对应的表情图片名称
@@ -55,18 +54,19 @@
             NSAttributedString *imageStr = [NSAttributedString attributedStringWithAttachment:achment];
             NSRange emotionRange = {result.range.location - lengthCount ,subString.length};
             [attribuStr replaceCharactersInRange:emotionRange withAttributedString:imageStr];
-            
             lengthCount += subString.length - 1;
-
-            
         } else {
-            
-            
             // 如果不是图片就要进行超链接
             [attribuStr addAttribute:NSLinkAttributeName value:subString range:NSMakeRange(result.range.location - lengthCount, subString.length)];
         }
         
     }];
+    
+    [attribuStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:14] range:NSMakeRange(0, attribuStr.length)];
+    
+
+
+    
     
     return attribuStr;
     

@@ -38,7 +38,9 @@
 /*微博图片*/
 @property (nonatomic,strong)NSArray *pic_urls;
 
-/*转发微博*/
 @property (nonatomic,strong)WeiboMedol *retweetedWeibo;
+
+/*转发微博*/
+
 
 @end
