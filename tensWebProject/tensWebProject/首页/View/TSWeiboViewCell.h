@@ -15,4 +15,5 @@
 
 +(CGFloat)showrangHeight:(WeiboMedol *)medol;
 
+
 @end

@@ -13,6 +13,11 @@
 		15077CFD1BC2E74800616E47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15077CFC1BC2E74800616E47 /* Images.xcassets */; };
 		15077D001BC2E74800616E47 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15077CFE1BC2E74800616E47 /* LaunchScreen.xib */; };
 		15077D0C1BC2E74800616E47 /* tensWebProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15077D0B1BC2E74800616E47 /* tensWebProjectTests.m */; };
+		150FAC5D1BCCA9D700B98126 /* ToatterString.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FAC5C1BCCA9D700B98126 /* ToatterString.m */; };
+		150FAC601BCCAAC600B98126 /* EmotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FAC5F1BCCAAC600B98126 /* EmotionManager.m */; };
+		150FAC651BCCAC8E00B98126 /* defaultInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 150FAC621BCCAC8E00B98126 /* defaultInfo.plist */; };
+		150FAC661BCCAC8E00B98126 /* emojiInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 150FAC631BCCAC8E00B98126 /* emojiInfo.plist */; };
+		150FAC671BCCAC8E00B98126 /* lxhInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 150FAC641BCCAC8E00B98126 /* lxhInfo.plist */; };
 		151B46011BC9DF5200E22DEE /* HZIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151B45FA1BC9DF5200E22DEE /* HZIndicatorView.m */; };
 		151B46021BC9DF5200E22DEE /* HZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 151B45FC1BC9DF5200E22DEE /* HZPhotoBrowser.m */; };
 		151B46031BC9DF5200E22DEE /* HZPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151B45FF1BC9DF5200E22DEE /* HZPhotoBrowserView.m */; };
@@ -106,6 +111,13 @@
 		15077D051BC2E74800616E47 /* tensWebProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tensWebProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15077D0A1BC2E74800616E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15077D0B1BC2E74800616E47 /* tensWebProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tensWebProjectTests.m; sourceTree = "<group>"; };
+		150FAC5B1BCCA9D700B98126 /* ToatterString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToatterString.h; path = ../View/ToatterString.h; sourceTree = "<group>"; };
+		150FAC5C1BCCA9D700B98126 /* ToatterString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToatterString.m; path = ../View/ToatterString.m; sourceTree = "<group>"; };
+		150FAC5E1BCCAAC600B98126 /* EmotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionManager.h; sourceTree = "<group>"; };
+		150FAC5F1BCCAAC600B98126 /* EmotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionManager.m; sourceTree = "<group>"; };
+		150FAC621BCCAC8E00B98126 /* defaultInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaultInfo.plist; sourceTree = "<group>"; };
+		150FAC631BCCAC8E00B98126 /* emojiInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emojiInfo.plist; sourceTree = "<group>"; };
+		150FAC641BCCAC8E00B98126 /* lxhInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lxhInfo.plist; sourceTree = "<group>"; };
 		151B45F91BC9DF5200E22DEE /* HZIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZIndicatorView.h; sourceTree = "<group>"; };
 		151B45FA1BC9DF5200E22DEE /* HZIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZIndicatorView.m; sourceTree = "<group>"; };
 		151B45FB1BC9DF5200E22DEE /* HZPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowser.h; sourceTree = "<group>"; };
@@ -269,6 +281,7 @@
 		15077CE31BC2E74800616E47 = {
 			isa = PBXGroup;
 			children = (
+				150FAC611BCCAC6C00B98126 /* Plist文件 */,
 				15077D251BC2F51300616E47 /* Other */,
 				1549136F1BC59884002F16FC /* web授权 */,
 				15077CEE1BC2E74800616E47 /* tensWebProject */,
@@ -355,6 +368,10 @@
 				15EDFB501BC72E3000259791 /* WeiboMedol.m */,
 				15EDFB521BC7337B00259791 /* UserMedol.h */,
 				15EDFB531BC7337B00259791 /* UserMedol.m */,
+				150FAC5E1BCCAAC600B98126 /* EmotionManager.h */,
+				150FAC5F1BCCAAC600B98126 /* EmotionManager.m */,
+				150FAC5B1BCCA9D700B98126 /* ToatterString.h */,
+				150FAC5C1BCCA9D700B98126 /* ToatterString.m */,
 			);
 			path = Medoll;
 			sourceTree = "<group>";
@@ -499,6 +516,17 @@
 				15077CF91BC2E74800616E47 /* Main.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		150FAC611BCCAC6C00B98126 /* Plist文件 */ = {
+			isa = PBXGroup;
+			children = (
+				150FAC621BCCAC8E00B98126 /* defaultInfo.plist */,
+				150FAC631BCCAC8E00B98126 /* emojiInfo.plist */,
+				150FAC641BCCAC8E00B98126 /* lxhInfo.plist */,
+			);
+			name = "Plist文件";
+			path = "tensWebProject/Other/Plist文件";
 			sourceTree = "<group>";
 		};
 		151B45F81BC9DF5200E22DEE /* HZPhotoBrowser */ = {
@@ -828,8 +856,11 @@
 			files = (
 				15CC34181BC82B06007FEBD3 /* TSWeiboViewCell.xib in Resources */,
 				15077CFB1BC2E74800616E47 /* Main.storyboard in Resources */,
+				150FAC661BCCAC8E00B98126 /* emojiInfo.plist in Resources */,
+				150FAC671BCCAC8E00B98126 /* lxhInfo.plist in Resources */,
 				15077D001BC2E74800616E47 /* LaunchScreen.xib in Resources */,
 				15F110911BC979E700D3BCF3 /* weiboImageView.xib in Resources */,
+				150FAC651BCCAC8E00B98126 /* defaultInfo.plist in Resources */,
 				15CC34861BC8AA91007FEBD3 /* MJRefresh.bundle in Resources */,
 				151B46041BC9DF5200E22DEE /* whiteplaceholder.png in Resources */,
 				15077CFD1BC2E74800616E47 /* Images.xcassets in Resources */,
@@ -875,6 +906,7 @@
 				15CC343E1BC858F6007FEBD3 /* SDWebImageCompat.m in Sources */,
 				15F1108F1BC979DA00D3BCF3 /* weiboImageView.m in Sources */,
 				15CC34791BC8AA91007FEBD3 /* MJRefreshBackFooter.m in Sources */,
+				150FAC601BCCAAC600B98126 /* EmotionManager.m in Sources */,
 				15E73C4E1BC5CE07004EB2B5 /* TSBaseMedol.m in Sources */,
 				15CC34481BC858F6007FEBD3 /* UIImageView+HighlightedWebCache.m in Sources */,
 				15CC34871BC8AA91007FEBD3 /* MJRefreshConst.m in Sources */,
@@ -891,6 +923,7 @@
 				154B11261BC2FDFC0018C96E /* TSNavgationController.m in Sources */,
 				15CC34851BC8AA91007FEBD3 /* MJRefreshStateHeader.m in Sources */,
 				15E73C681BC5D035004EB2B5 /* AFHTTPSessionManager.m in Sources */,
+				150FAC5D1BCCA9D700B98126 /* ToatterString.m in Sources */,
 				15EDFB511BC72E3000259791 /* WeiboMedol.m in Sources */,
 				15CC343F1BC858F6007FEBD3 /* SDWebImageDecoder.m in Sources */,
 				15E73C661BC5D035004EB2B5 /* AFHTTPRequestOperation.m in Sources */,

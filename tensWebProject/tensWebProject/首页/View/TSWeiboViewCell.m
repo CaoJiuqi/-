@@ -11,11 +11,14 @@
 #import "UserMedol.h"
 #import "weiboImageView.h"
 #import "HZPhotoBrowser.h"
+#import "ToatterString.h"
+
 
 #define imageWedth (TSWedth -30)/3 // 每张图片的高度
 #define imageSpace 5 // 图片之间的间距
 
 #define OtherSpace 130 //其他视图的高度
+ 
 
 @interface TSWeiboViewCell ()
 {
@@ -33,7 +36,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *commentsButton;
 @property (weak, nonatomic) IBOutlet UIButton *goodButton;
 @property (weak, nonatomic) IBOutlet UIView *bgImageView;
-@property (strong,nonatomic)weiboImageView *weiboImageView;
+@property (strong,nonatomic) weiboImageView *weiboImageView;
+@property (weak, nonatomic) IBOutlet UIView *resetWeiboView;
+@property (weak, nonatomic) IBOutlet UITextView *resetWeiboText;
+@property (weak, nonatomic) IBOutlet UIView *resetWeibobgImage;
 
 @end
 
@@ -42,6 +48,7 @@
 - (void)awakeFromNib {
     self.toolView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.toolView.layer.borderWidth = 0.5;
+
 
 
     
@@ -53,15 +60,38 @@
 {
     _weiboMedol = weiboMedol;
     
+    [self setWeiboViews];
+    
+    // 有转发微博时再设置转发微博数据
+    if (_weiboMedol.retweetedWeibo != nil) {
+        
+        self.resetWeiboView.hidden = NO;
+        
+        [self setRetWeiboViews];
+        
+    } else {
+        
+        self.resetWeiboView.hidden = YES;
+    }
+    
+    
+    
+    
+}
+
+#pragma mark -- 显示微博图片
+- (void)setWeiboViews
+{
+
     [self.headImageView sd_setImageWithURL:[NSURL URLWithString:_weiboMedol.user.profile_image_url]];
     self.UserNameLable.text = _weiboMedol.user.screen_name;
     self.timeLable.text = _weiboMedol.created_at;
     self.sourceLable.text = _weiboMedol.source;
     
-    self.contentTextview.text = _weiboMedol.text;
+//    self.contentTextview.text = _weiboMedol.text;
+    self.contentTextview.attributedText = [ToatterString attributeStringfromString:_weiboMedol.text];
     
     
-
     if ([_weiboMedol.reposts_count integerValue] > 0) {
         NSString *sharetitle=[NSString stringWithFormat:@"%@",_weiboMedol.reposts_count];
         [self.shareButton setTitle:sharetitle forState:UIControlStateNormal];
@@ -70,30 +100,40 @@
         NSString * commentsCount =[NSString stringWithFormat:@"%@",_weiboMedol.comments_count];
         [self.commentsButton setTitle:commentsCount forState:UIControlStateNormal];
         [self.commentsButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-
+        
     }
     if ([_weiboMedol.attitudes_count integerValue]> 0) {
-
+        
         NSString *goodstr = [NSString stringWithFormat:@"%@",_weiboMedol.attitudes_count];
         [self.goodButton setTitle:goodstr forState:UIControlStateNormal];
     }
-
+    
     // 将之前的视图移除
     [self.weiboImageView removeFromSuperview];
     
     // 添加图片视图
-    if (weiboMedol.pic_urls.count > 0) {
-        [self showWeiboImage];
+    if (_weiboMedol.pic_urls.count > 0) {
+
+        [self showWeiboImages:_weiboMedol.pic_urls withSuperView:self.bgImageView];
     }
-    
-    
     
 }
 
-#pragma mark -- 显示微博图片
--(void)showWeiboImage
+-(void)setRetWeiboViews
 {
-    int count = (int)[self.weiboMedol.pic_urls count];
+    self.resetWeiboText.text  = _weiboMedol.retweetedWeibo.text;
+    
+    [self.weiboImageView removeFromSuperview];
+    if (_weiboMedol.retweetedWeibo.pic_urls > 0) {
+        [self showWeiboImages:_weiboMedol.retweetedWeibo.pic_urls withSuperView:self.resetWeiboView];
+    }
+
+}
+
+#pragma mark -- 显示微博图片
+- (void)showWeiboImages:(NSArray *)pic_urls withSuperView:(UIView *)supView
+{
+    NSInteger count = pic_urls.count;
     if( count== 1 )
     {
         self.weiboImageView =  _nibArray[0];
@@ -126,6 +166,7 @@
     CGRect rect =[medol.text boundingRectWithSize:CGSizeMake(TSWedth - 20, MAXFLOAT)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]}context:nil];
     
    CGFloat imageHeight =  [self setImageViewHeight:medol];
+
 
     
     if (imageHeight != 0) {

@@ -41,7 +41,7 @@
 
     
     if ([key isEqualToString:@"pic_ids"]) {
-        self.pic_urls = [[NSArray alloc]initWithObjects:value];   
+        self.pic_urls = [[NSArray alloc]initWithArray:value];
     }
     
     
