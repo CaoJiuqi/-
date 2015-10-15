@@ -9,9 +9,11 @@
 #import "TSTabBarController.h"
 #import "UIView+Extension.h"
 #import "SendWebView.h"
+#import "SendWeiboViewController.h"
+#import "TSNavgationController.h"
 
 
-@interface TSTabBarController ()
+@interface TSTabBarController () <sendWeiboDelegate>
 
 
 @end
@@ -70,14 +72,29 @@
 
 -(void)centerButtonAction
 {
-    NSLog(@"点击了");
-    SendWebView *view = [[SendWebView alloc]init];
-    [view showView];
+    SendWebView *centerview = [SendWebView create];
+    centerview.delege = self;
     
+    [centerview showView];
+}
+
+-(void)OnClickDelegte:(SendWeiboItemType)itemType
+{
+    if (itemType == SendWeiboItemIsText) {
+        SendWeiboViewController *sendVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SendWeiboViewController"];
+        TSNavgationController *navgationCol = [[TSNavgationController alloc]initWithRootViewController:sendVC];
+        
+        [self presentViewController:navgationCol animated:YES completion:nil];
+        
+        
+        
+    }else if(itemType == SendWeiboItemIsAlbum)
+    {
     
-
-
-
+    }else if(itemType ==  SendWeiboItemIsCamera)
+    {
+        
+    }
 }
 
 
