@@ -10,7 +10,7 @@
 
 @interface ToatterString : NSObject
 
-+ (NSAttributedString *)attributeStringfromString:(NSString *)string;
++ (NSAttributedString *)attributeStringfromString:(NSString *)string withFont:(UIFont *)font;
 
 
 @end

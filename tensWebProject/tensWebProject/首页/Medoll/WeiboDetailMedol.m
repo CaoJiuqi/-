@@ -10,4 +10,14 @@
 
 @implementation WeiboDetailMedol
 
+-(instancetype)initWithDictary:(NSDictionary *)dic
+{
+    self = [super initWithDictary:dic];
+    if (self) {
+        self.user = [[UserMedol alloc]initWithDictary:dic[@"user"]];
+    }
+    
+    return self;
+}
+
 @end

@@ -14,7 +14,8 @@
 @property (nonatomic,strong)WeiboMedol *weiboMedol;
 
 +(CGFloat)showrangHeight:(WeiboMedol *)medol;
-- (CGFloat)setImageViewHeight:(WeiboMedol *)medol;
+
++ (CGFloat)setImageViewHeight:(WeiboMedol *)medol;
 
 
 

@@ -9,5 +9,6 @@
 #import "TSConst.h"
 
 @implementation TSConst
+NSString * const TSSendWeiboSuccessNotification = @"WeiboSuccessNotification";
 
 @end

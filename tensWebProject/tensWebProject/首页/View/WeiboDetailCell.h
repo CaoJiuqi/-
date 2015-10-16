@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeiboDetailMedol.h"
 
 @interface WeiboDetailCell : UITableViewCell
+
+@property (nonatomic,strong) WeiboDetailMedol *medol;
 
 @end

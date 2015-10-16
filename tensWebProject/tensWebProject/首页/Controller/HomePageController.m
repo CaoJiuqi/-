@@ -15,6 +15,10 @@
 #import "WeiboMedol.h"
 #import "TSWeiboViewCell.h"
 #import "MJRefresh.h"
+#import "TSWeiboDetailViewController.h"
+#import "AFHRequestHttp.h"
+
+
 
 
 @interface HomePageController () <UITableViewDataSource,UITableViewDelegate>
@@ -36,6 +40,7 @@ static NSString *cellID = @"TSWeiboViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadData) name:TSSendWeiboSuccessNotification object:nil];
     // 添加下拉视图
     [self addHeaderRefreshView];
     
@@ -71,15 +76,13 @@ static NSString *cellID = @"TSWeiboViewCell";
     }
     
     //发送请求
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:TSWeiboUrl parameters:dic success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [AFHRequestHttp requestURL:TSWeiboUrl parameters:dic requestType:RequestISGET success:^(id result) {
         
-        [self saveDataModelwithDictary:responseObject];
+        [self saveDataModelwithDictary:result];
+    } failure:^(id error) {
         
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"errror:%@",error);
         [self.tableView.header endRefreshing];
-
     }];
     
 }
@@ -153,13 +156,21 @@ static NSString *cellID = @"TSWeiboViewCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TSWeiboViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
-    
-    
     cell.weiboMedol = self.weiboMedolArray[indexPath.row];
-
-    
     return cell;
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    NSLog(@"点击了");
+//    TSWeiboDetailViewController *detailCV = [self.storyboard instantiateViewControllerWithIdentifier:@"TSWeiboDetailViewController"];
+//    detailCV.medol = self.weiboMedolArray[indexPath.row];
+//    [self.navigationController pushViewController:detailCV animated:YES];
+//    
+}
+
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

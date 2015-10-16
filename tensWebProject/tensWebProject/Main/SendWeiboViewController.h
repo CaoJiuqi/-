@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SendWeiboViewController : UIViewController
+typedef NS_ENUM(long, KeyboardToolButtonType)
+{
+    KeyboardToolIsPhoto = 0,
+    KeyboardToolIsCamera,
+    KeyboardToolIsAt,
+    KeyboardToolIsTopic,
+    KeyboardToolIsEmotion
+};
+
+@interface SendWeiboViewController : UIViewController   
 
 @end

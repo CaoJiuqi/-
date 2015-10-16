@@ -19,6 +19,11 @@
 @implementation SendWebView
 
 
++(instancetype)create
+{
+
+    return [[self alloc]init];
+}
 -(void)showView
 {
     UIWindow *keyWindow = [[UIApplication sharedApplication]keyWindow];
@@ -28,6 +33,7 @@
     [self addSubview:self.bgImageView];
     [self addSubview:self.delectButton];
     [self createButton];
+    
 
 }
 
@@ -75,7 +81,7 @@
 /**
  *  动画显示按钮
  *
- *  @param isShow <#isShow description#>
+ *  @param isShow 
  */
 
 -(void)showAnmation:(BOOL)isShow
@@ -88,8 +94,6 @@
         oneRow =  twoRow = TSHeight;
         delay = 0.3;
     }
-
-    
     for (UIButton *button in self.buttonArray) {
         
         /**
@@ -99,22 +103,14 @@
          - returns:
          */
         [UIView animateWithDuration:0.5 delay:delay usingSpringWithDamping:0.7 initialSpringVelocity:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
-            
             if (isShow) {
-                
                 button.x = 30 + (TSWedth -40)/3 * (button.tag%3);
             }else
             {
                 button.x = 30;
-
             }
-
-            
             button.y = button.tag < 3 ? oneRow :twoRow ;
-
         } completion:^(BOOL finished) {
-            
-            
         }];
         
         delay = isShow ? delay + 0.05:delay - 0.05;
@@ -173,13 +169,31 @@
 -(void)ClickAction:(UIButton *)button
 {
 
+    [self buttonAnimations:button];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        if ([self.delege respondsToSelector:@selector(OnClickDelegte:)]) {
+            
+            [self.delege OnClickDelegte:button.tag];
+        }
+    });
+    
+}
+
+
+#pragma mark - 点击选项按钮时的动画
+- (void)buttonAnimations:(UIButton *)button
+{
     [UIView animateWithDuration:0.5 animations:^{
         
         button.transform = CGAffineTransformMakeScale(1.5, 1.5);
         button.alpha = 0;
+        
     }];
-    [self.buttonArray removeObject:button];
     
+    
+    [self.buttonArray removeObject:button];
     for (UIButton *button in self.buttonArray) {
         
         [UIView animateWithDuration:0.5 animations:^{
@@ -187,12 +201,17 @@
             button.transform = CGAffineTransformMakeScale(0.5, 0.5);
             button.alpha = 0;
         }];
+        
     }
-    
-    [self CloseAction];
-    
-    
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [self removeFromSuperview];
+    });
 }
+
+
+
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {

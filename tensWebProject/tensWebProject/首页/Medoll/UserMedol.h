@@ -17,7 +17,7 @@
 @property (nonatomic,copy)NSString *screen_name;
 
 /*个人描述*/
-@property (nonatomic,copy)NSString *description;
+//@property (nonatomic,copy)NSString *description;
 
 /*户头像地址（中图）*/
 @property (nonatomic,copy)NSString *profile_image_url;

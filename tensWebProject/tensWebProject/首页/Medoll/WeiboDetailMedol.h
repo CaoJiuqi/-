@@ -7,7 +7,14 @@
 //
 
 #import "TSBaseMedol.h"
+#import "UserMedol.h"
 
 @interface WeiboDetailMedol : TSBaseMedol
+
+@property (nonatomic,copy)NSString *created_at;
+
+@property (nonatomic,copy)NSString *text;
+
+@property (nonatomic,copy)UserMedol *user;
 
 @end

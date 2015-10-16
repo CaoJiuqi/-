@@ -13,7 +13,7 @@
 
 @implementation ToatterString
 
-+ (NSAttributedString *)attributeStringfromString:(NSString *)string
++ (NSAttributedString *)attributeStringfromString:(NSString *)string withFont:(UIFont *)font
 {
     NSMutableAttributedString *attribuStr = [[NSMutableAttributedString alloc] initWithString:string];
     
@@ -62,7 +62,7 @@
         
     }];
     
-    [attribuStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:14] range:NSMakeRange(0, attribuStr.length)];
+    [attribuStr addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, attribuStr.length)];
     
 
 

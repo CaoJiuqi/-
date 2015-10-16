@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface TSConst : NSObject
+UIKIT_EXTERN NSString * const TSSendWeiboSuccessNotification;
 
 @end

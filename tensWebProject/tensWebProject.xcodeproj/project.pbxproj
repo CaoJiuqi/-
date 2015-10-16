@@ -23,6 +23,10 @@
 		151B46031BC9DF5200E22DEE /* HZPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151B45FF1BC9DF5200E22DEE /* HZPhotoBrowserView.m */; };
 		151B46041BC9DF5200E22DEE /* whiteplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 151B46001BC9DF5200E22DEE /* whiteplaceholder.png */; };
 		1527D5191BCA0AE70042C89E /* WeiboImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527D5181BCA0AE70042C89E /* WeiboImage.m */; };
+		154420021BCDFD780078400D /* TSWeiboDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154420011BCDFD780078400D /* TSWeiboDetailViewController.m */; };
+		154420051BCE048B0078400D /* WeiboDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 154420041BCE048B0078400D /* WeiboDetailCell.m */; };
+		154420081BCE09440078400D /* WeiboDetailMedol.m in Sources */ = {isa = PBXBuildFile; fileRef = 154420071BCE09440078400D /* WeiboDetailMedol.m */; };
+		1544200B1BCEC9B00078400D /* SendWeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544200A1BCEC9B00078400D /* SendWeiboViewController.m */; };
 		154913761BC59BD5002F16FC /* WebRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154913751BC59BD5002F16FC /* WebRequestController.m */; };
 		154B11231BC2FDB70018C96E /* TSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B11221BC2FDB70018C96E /* TSTabBarController.m */; };
 		154B11261BC2FDFC0018C96E /* TSNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B11251BC2FDFC0018C96E /* TSNavgationController.m */; };
@@ -30,6 +34,36 @@
 		154B112C1BC349ED0018C96E /* TSSeaachFieild.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B112B1BC349ED0018C96E /* TSSeaachFieild.m */; };
 		154B112F1BC34D180018C96E /* TSSeachController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B112E1BC34D180018C96E /* TSSeachController.m */; };
 		154B11321BC36AAF0018C96E /* HomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B11311BC36AAF0018C96E /* HomePageController.m */; };
+		15523D9C1BCF55DA004925BE /* AFHRequestHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523D9B1BCF55DA004925BE /* AFHRequestHttp.m */; };
+		15523DA01BCF5B99004925BE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523D9F1BCF5B99004925BE /* MBProgressHUD.m */; };
+		15523DA31BCF5C99004925BE /* TSConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DA21BCF5C99004925BE /* TSConst.m */; };
+		15523DF01BD02234004925BE /* UIImage+ZLPhotoLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DAE1BD02234004925BE /* UIImage+ZLPhotoLib.m */; };
+		15523DF11BD02234004925BE /* UIView+ZLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DB01BD02234004925BE /* UIView+ZLExtension.m */; };
+		15523DF21BD02234004925BE /* ZLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DB61BD02234004925BE /* ZLCamera.m */; };
+		15523DF31BD02234004925BE /* ZLCameraImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DB81BD02234004925BE /* ZLCameraImageView.m */; };
+		15523DF41BD02234004925BE /* ZLCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DBA1BD02234004925BE /* ZLCameraView.m */; };
+		15523DF51BD02234004925BE /* ZLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DBC1BD02234004925BE /* ZLCameraViewController.m */; };
+		15523DF61BD02234004925BE /* ZLPhotoPickerBrowserPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DC11BD02234004925BE /* ZLPhotoPickerBrowserPhoto.m */; };
+		15523DF71BD02234004925BE /* ZLPhotoPickerBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DC41BD02234004925BE /* ZLPhotoPickerBrowserViewController.m */; };
+		15523DF81BD02234004925BE /* ZLPhotoPickerBrowserPhotoImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DC71BD02234004925BE /* ZLPhotoPickerBrowserPhotoImageView.m */; };
+		15523DF91BD02234004925BE /* ZLPhotoPickerBrowserPhotoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DC91BD02234004925BE /* ZLPhotoPickerBrowserPhotoScrollView.m */; };
+		15523DFA1BD02234004925BE /* ZLPhotoPickerBrowserPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DCB1BD02234004925BE /* ZLPhotoPickerBrowserPhotoView.m */; };
+		15523DFB1BD02234004925BE /* ZLPhotoPickerCustomToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DCD1BD02234004925BE /* ZLPhotoPickerCustomToolBarView.m */; };
+		15523DFC1BD02234004925BE /* ZLPhotoAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DD11BD02234004925BE /* ZLPhotoAssets.m */; };
+		15523DFD1BD02234004925BE /* ZLPhotoPickerDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DD31BD02234004925BE /* ZLPhotoPickerDatas.m */; };
+		15523DFE1BD02234004925BE /* ZLPhotoPickerGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DD51BD02234004925BE /* ZLPhotoPickerGroup.m */; };
+		15523DFF1BD02234004925BE /* ZLPhotoPickerAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DD81BD02234004925BE /* ZLPhotoPickerAssetsViewController.m */; };
+		15523E001BD02234004925BE /* ZLPhotoPickerGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DDA1BD02234004925BE /* ZLPhotoPickerGroupViewController.m */; };
+		15523E011BD02234004925BE /* ZLPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DDC1BD02234004925BE /* ZLPhotoPickerViewController.m */; };
+		15523E021BD02234004925BE /* ZLPhotoPickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DDF1BD02234004925BE /* ZLPhotoPickerCollectionView.m */; };
+		15523E031BD02234004925BE /* ZLPhotoPickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DE11BD02234004925BE /* ZLPhotoPickerCollectionViewCell.m */; };
+		15523E041BD02234004925BE /* ZLPhotoPickerFooterCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DE31BD02234004925BE /* ZLPhotoPickerFooterCollectionReusableView.m */; };
+		15523E051BD02234004925BE /* ZLPhotoPickerGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DE51BD02234004925BE /* ZLPhotoPickerGroupTableViewCell.m */; };
+		15523E061BD02234004925BE /* ZLPhotoPickerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DE71BD02234004925BE /* ZLPhotoPickerImageView.m */; };
+		15523E071BD02234004925BE /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DEC1BD02234004925BE /* DACircularProgressView.m */; };
+		15523E081BD02234004925BE /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DEE1BD02234004925BE /* DALabeledCircularProgressView.m */; };
+		15523E091BD02234004925BE /* ZLPhotoLib.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 15523DEF1BD02234004925BE /* ZLPhotoLib.bundle */; };
+		15523E0F1BD027EF004925BE /* SendImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523E0E1BD027EF004925BE /* SendImageView.m */; };
 		15CC34171BC82B06007FEBD3 /* TSWeiboViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CC34151BC82B06007FEBD3 /* TSWeiboViewCell.m */; };
 		15CC34181BC82B06007FEBD3 /* TSWeiboViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15CC34161BC82B06007FEBD3 /* TSWeiboViewCell.xib */; };
 		15CC343B1BC858F6007FEBD3 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CC341B1BC858F6007FEBD3 /* MKAnnotationView+WebCache.m */; };
@@ -128,6 +162,14 @@
 		151B46001BC9DF5200E22DEE /* whiteplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteplaceholder.png; sourceTree = "<group>"; };
 		1527D5171BCA0AE70042C89E /* WeiboImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboImage.h; sourceTree = "<group>"; };
 		1527D5181BCA0AE70042C89E /* WeiboImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboImage.m; sourceTree = "<group>"; };
+		154420001BCDFD780078400D /* TSWeiboDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSWeiboDetailViewController.h; sourceTree = "<group>"; };
+		154420011BCDFD780078400D /* TSWeiboDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSWeiboDetailViewController.m; sourceTree = "<group>"; };
+		154420031BCE048B0078400D /* WeiboDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboDetailCell.h; sourceTree = "<group>"; };
+		154420041BCE048B0078400D /* WeiboDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboDetailCell.m; sourceTree = "<group>"; };
+		154420061BCE09430078400D /* WeiboDetailMedol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboDetailMedol.h; sourceTree = "<group>"; };
+		154420071BCE09440078400D /* WeiboDetailMedol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboDetailMedol.m; sourceTree = "<group>"; };
+		154420091BCEC9B00078400D /* SendWeiboViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SendWeiboViewController.h; path = ../../Main/SendWeiboViewController.h; sourceTree = "<group>"; };
+		1544200A1BCEC9B00078400D /* SendWeiboViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SendWeiboViewController.m; path = ../../Main/SendWeiboViewController.m; sourceTree = "<group>"; };
 		154913731BC5998F002F16FC /* URLRequestString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLRequestString.h; sourceTree = "<group>"; };
 		154913741BC59BD5002F16FC /* WebRequestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestController.h; sourceTree = "<group>"; };
 		154913751BC59BD5002F16FC /* WebRequestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequestController.m; sourceTree = "<group>"; };
@@ -144,6 +186,67 @@
 		154B11301BC36AAF0018C96E /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
 		154B11311BC36AAF0018C96E /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
 		154B11331BC3759E0018C96E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		15523D9A1BCF55DA004925BE /* AFHRequestHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHRequestHttp.h; sourceTree = "<group>"; };
+		15523D9B1BCF55DA004925BE /* AFHRequestHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHRequestHttp.m; sourceTree = "<group>"; };
+		15523D9E1BCF5B99004925BE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		15523D9F1BCF5B99004925BE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		15523DA11BCF5C99004925BE /* TSConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSConst.h; sourceTree = "<group>"; };
+		15523DA21BCF5C99004925BE /* TSConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSConst.m; sourceTree = "<group>"; };
+		15523DAD1BD02234004925BE /* UIImage+ZLPhotoLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZLPhotoLib.h"; sourceTree = "<group>"; };
+		15523DAE1BD02234004925BE /* UIImage+ZLPhotoLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZLPhotoLib.m"; sourceTree = "<group>"; };
+		15523DAF1BD02234004925BE /* UIView+ZLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZLExtension.h"; sourceTree = "<group>"; };
+		15523DB01BD02234004925BE /* UIView+ZLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZLExtension.m"; sourceTree = "<group>"; };
+		15523DB51BD02234004925BE /* ZLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCamera.h; sourceTree = "<group>"; };
+		15523DB61BD02234004925BE /* ZLCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCamera.m; sourceTree = "<group>"; };
+		15523DB71BD02234004925BE /* ZLCameraImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCameraImageView.h; sourceTree = "<group>"; };
+		15523DB81BD02234004925BE /* ZLCameraImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCameraImageView.m; sourceTree = "<group>"; };
+		15523DB91BD02234004925BE /* ZLCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCameraView.h; sourceTree = "<group>"; };
+		15523DBA1BD02234004925BE /* ZLCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCameraView.m; sourceTree = "<group>"; };
+		15523DBB1BD02234004925BE /* ZLCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCameraViewController.h; sourceTree = "<group>"; };
+		15523DBC1BD02234004925BE /* ZLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCameraViewController.m; sourceTree = "<group>"; };
+		15523DBD1BD02234004925BE /* ZLPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhoto.h; sourceTree = "<group>"; };
+		15523DC01BD02234004925BE /* ZLPhotoPickerBrowserPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerBrowserPhoto.h; sourceTree = "<group>"; };
+		15523DC11BD02234004925BE /* ZLPhotoPickerBrowserPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerBrowserPhoto.m; sourceTree = "<group>"; };
+		15523DC31BD02234004925BE /* ZLPhotoPickerBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerBrowserViewController.h; sourceTree = "<group>"; };
+		15523DC41BD02234004925BE /* ZLPhotoPickerBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerBrowserViewController.m; sourceTree = "<group>"; };
+		15523DC61BD02234004925BE /* ZLPhotoPickerBrowserPhotoImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerBrowserPhotoImageView.h; sourceTree = "<group>"; };
+		15523DC71BD02234004925BE /* ZLPhotoPickerBrowserPhotoImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerBrowserPhotoImageView.m; sourceTree = "<group>"; };
+		15523DC81BD02234004925BE /* ZLPhotoPickerBrowserPhotoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerBrowserPhotoScrollView.h; sourceTree = "<group>"; };
+		15523DC91BD02234004925BE /* ZLPhotoPickerBrowserPhotoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerBrowserPhotoScrollView.m; sourceTree = "<group>"; };
+		15523DCA1BD02234004925BE /* ZLPhotoPickerBrowserPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerBrowserPhotoView.h; sourceTree = "<group>"; };
+		15523DCB1BD02234004925BE /* ZLPhotoPickerBrowserPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerBrowserPhotoView.m; sourceTree = "<group>"; };
+		15523DCC1BD02234004925BE /* ZLPhotoPickerCustomToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerCustomToolBarView.h; sourceTree = "<group>"; };
+		15523DCD1BD02234004925BE /* ZLPhotoPickerCustomToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerCustomToolBarView.m; sourceTree = "<group>"; };
+		15523DD01BD02234004925BE /* ZLPhotoAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoAssets.h; sourceTree = "<group>"; };
+		15523DD11BD02234004925BE /* ZLPhotoAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoAssets.m; sourceTree = "<group>"; };
+		15523DD21BD02234004925BE /* ZLPhotoPickerDatas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerDatas.h; sourceTree = "<group>"; };
+		15523DD31BD02234004925BE /* ZLPhotoPickerDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerDatas.m; sourceTree = "<group>"; };
+		15523DD41BD02234004925BE /* ZLPhotoPickerGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerGroup.h; sourceTree = "<group>"; };
+		15523DD51BD02234004925BE /* ZLPhotoPickerGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerGroup.m; sourceTree = "<group>"; };
+		15523DD71BD02234004925BE /* ZLPhotoPickerAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerAssetsViewController.h; sourceTree = "<group>"; };
+		15523DD81BD02234004925BE /* ZLPhotoPickerAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerAssetsViewController.m; sourceTree = "<group>"; };
+		15523DD91BD02234004925BE /* ZLPhotoPickerGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerGroupViewController.h; sourceTree = "<group>"; };
+		15523DDA1BD02234004925BE /* ZLPhotoPickerGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerGroupViewController.m; sourceTree = "<group>"; };
+		15523DDB1BD02234004925BE /* ZLPhotoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerViewController.h; sourceTree = "<group>"; };
+		15523DDC1BD02234004925BE /* ZLPhotoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerViewController.m; sourceTree = "<group>"; };
+		15523DDE1BD02234004925BE /* ZLPhotoPickerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerCollectionView.h; sourceTree = "<group>"; };
+		15523DDF1BD02234004925BE /* ZLPhotoPickerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerCollectionView.m; sourceTree = "<group>"; };
+		15523DE01BD02234004925BE /* ZLPhotoPickerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerCollectionViewCell.h; sourceTree = "<group>"; };
+		15523DE11BD02234004925BE /* ZLPhotoPickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerCollectionViewCell.m; sourceTree = "<group>"; };
+		15523DE21BD02234004925BE /* ZLPhotoPickerFooterCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerFooterCollectionReusableView.h; sourceTree = "<group>"; };
+		15523DE31BD02234004925BE /* ZLPhotoPickerFooterCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerFooterCollectionReusableView.m; sourceTree = "<group>"; };
+		15523DE41BD02234004925BE /* ZLPhotoPickerGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerGroupTableViewCell.h; sourceTree = "<group>"; };
+		15523DE51BD02234004925BE /* ZLPhotoPickerGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerGroupTableViewCell.m; sourceTree = "<group>"; };
+		15523DE61BD02234004925BE /* ZLPhotoPickerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerImageView.h; sourceTree = "<group>"; };
+		15523DE71BD02234004925BE /* ZLPhotoPickerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerImageView.m; sourceTree = "<group>"; };
+		15523DE81BD02234004925BE /* ZLPhotoPickerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerCommon.h; sourceTree = "<group>"; };
+		15523DEB1BD02234004925BE /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACircularProgressView.h; sourceTree = "<group>"; };
+		15523DEC1BD02234004925BE /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
+		15523DED1BD02234004925BE /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALabeledCircularProgressView.h; sourceTree = "<group>"; };
+		15523DEE1BD02234004925BE /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALabeledCircularProgressView.m; sourceTree = "<group>"; };
+		15523DEF1BD02234004925BE /* ZLPhotoLib.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZLPhotoLib.bundle; sourceTree = "<group>"; };
+		15523E0D1BD027EF004925BE /* SendImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendImageView.h; sourceTree = "<group>"; };
+		15523E0E1BD027EF004925BE /* SendImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendImageView.m; sourceTree = "<group>"; };
 		15CC34141BC82B06007FEBD3 /* TSWeiboViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSWeiboViewCell.h; sourceTree = "<group>"; };
 		15CC34151BC82B06007FEBD3 /* TSWeiboViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSWeiboViewCell.m; sourceTree = "<group>"; };
 		15CC34161BC82B06007FEBD3 /* TSWeiboViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSWeiboViewCell.xib; sourceTree = "<group>"; };
@@ -357,6 +460,8 @@
 			children = (
 				154B11301BC36AAF0018C96E /* HomePageController.h */,
 				154B11311BC36AAF0018C96E /* HomePageController.m */,
+				154420001BCDFD780078400D /* TSWeiboDetailViewController.h */,
+				154420011BCDFD780078400D /* TSWeiboDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -368,6 +473,8 @@
 				15EDFB501BC72E3000259791 /* WeiboMedol.m */,
 				15EDFB521BC7337B00259791 /* UserMedol.h */,
 				15EDFB531BC7337B00259791 /* UserMedol.m */,
+				154420061BCE09430078400D /* WeiboDetailMedol.h */,
+				154420071BCE09440078400D /* WeiboDetailMedol.m */,
 				150FAC5E1BCCAAC600B98126 /* EmotionManager.h */,
 				150FAC5F1BCCAAC600B98126 /* EmotionManager.m */,
 				150FAC5B1BCCA9D700B98126 /* ToatterString.h */,
@@ -387,6 +494,8 @@
 				15F110901BC979E700D3BCF3 /* weiboImageView.xib */,
 				1527D5171BCA0AE70042C89E /* WeiboImage.h */,
 				1527D5181BCA0AE70042C89E /* WeiboImage.m */,
+				154420031BCE048B0078400D /* WeiboDetailCell.h */,
+				154420041BCE048B0078400D /* WeiboDetailCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -491,6 +600,8 @@
 		15077D251BC2F51300616E47 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				15523DA41BD02234004925BE /* ZLPhotoLib */,
+				15523D9D1BCF5B99004925BE /* MBProgressHUD */,
 				151B45F81BC9DF5200E22DEE /* HZPhotoBrowser */,
 				15CC344B1BC8AA90007FEBD3 /* MJRefresh */,
 				15CC34191BC858F6007FEBD3 /* SDWebImage */,
@@ -557,6 +668,251 @@
 			);
 			name = "web授权";
 			path = "tensWebProject/web授权";
+			sourceTree = "<group>";
+		};
+		15523D9D1BCF5B99004925BE /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				15523D9E1BCF5B99004925BE /* MBProgressHUD.h */,
+				15523D9F1BCF5B99004925BE /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		15523DA41BD02234004925BE /* ZLPhotoLib */ = {
+			isa = PBXGroup;
+			children = (
+				15523DA51BD02234004925BE /* Classes */,
+				15523DE91BD02234004925BE /* DACircularProgress */,
+				15523DEF1BD02234004925BE /* ZLPhotoLib.bundle */,
+			);
+			path = ZLPhotoLib;
+			sourceTree = "<group>";
+		};
+		15523DA51BD02234004925BE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				15523DA61BD02234004925BE /* MLPhotoBrowser */,
+				15523DAB1BD02234004925BE /* Utils */,
+				15523DB41BD02234004925BE /* ZLCamera */,
+				15523DBD1BD02234004925BE /* ZLPhoto.h */,
+				15523DBE1BD02234004925BE /* ZLPhotoBrowser */,
+				15523DCE1BD02234004925BE /* ZLPhotoPicker */,
+				15523DE81BD02234004925BE /* ZLPhotoPickerCommon.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		15523DA61BD02234004925BE /* MLPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				15523DA71BD02234004925BE /* Classes */,
+			);
+			path = MLPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		15523DA71BD02234004925BE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				15523DA81BD02234004925BE /* Models */,
+				15523DA91BD02234004925BE /* ViewControllers */,
+				15523DAA1BD02234004925BE /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		15523DA81BD02234004925BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		15523DA91BD02234004925BE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		15523DAA1BD02234004925BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15523DAB1BD02234004925BE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				15523DAC1BD02234004925BE /* Category */,
+				15523DB11BD02234004925BE /* Lib */,
+				15523DB21BD02234004925BE /* Resource */,
+				15523DB31BD02234004925BE /* Views */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		15523DAC1BD02234004925BE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				15523DAD1BD02234004925BE /* UIImage+ZLPhotoLib.h */,
+				15523DAE1BD02234004925BE /* UIImage+ZLPhotoLib.m */,
+				15523DAF1BD02234004925BE /* UIView+ZLExtension.h */,
+				15523DB01BD02234004925BE /* UIView+ZLExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		15523DB11BD02234004925BE /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		15523DB21BD02234004925BE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		15523DB31BD02234004925BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15523DB41BD02234004925BE /* ZLCamera */ = {
+			isa = PBXGroup;
+			children = (
+				15523DB51BD02234004925BE /* ZLCamera.h */,
+				15523DB61BD02234004925BE /* ZLCamera.m */,
+				15523DB71BD02234004925BE /* ZLCameraImageView.h */,
+				15523DB81BD02234004925BE /* ZLCameraImageView.m */,
+				15523DB91BD02234004925BE /* ZLCameraView.h */,
+				15523DBA1BD02234004925BE /* ZLCameraView.m */,
+				15523DBB1BD02234004925BE /* ZLCameraViewController.h */,
+				15523DBC1BD02234004925BE /* ZLCameraViewController.m */,
+			);
+			path = ZLCamera;
+			sourceTree = "<group>";
+		};
+		15523DBE1BD02234004925BE /* ZLPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				15523DBF1BD02234004925BE /* Models */,
+				15523DC21BD02234004925BE /* ViewControllers */,
+				15523DC51BD02234004925BE /* Views */,
+			);
+			path = ZLPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		15523DBF1BD02234004925BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15523DC01BD02234004925BE /* ZLPhotoPickerBrowserPhoto.h */,
+				15523DC11BD02234004925BE /* ZLPhotoPickerBrowserPhoto.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		15523DC21BD02234004925BE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				15523DC31BD02234004925BE /* ZLPhotoPickerBrowserViewController.h */,
+				15523DC41BD02234004925BE /* ZLPhotoPickerBrowserViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		15523DC51BD02234004925BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15523DC61BD02234004925BE /* ZLPhotoPickerBrowserPhotoImageView.h */,
+				15523DC71BD02234004925BE /* ZLPhotoPickerBrowserPhotoImageView.m */,
+				15523DC81BD02234004925BE /* ZLPhotoPickerBrowserPhotoScrollView.h */,
+				15523DC91BD02234004925BE /* ZLPhotoPickerBrowserPhotoScrollView.m */,
+				15523DCA1BD02234004925BE /* ZLPhotoPickerBrowserPhotoView.h */,
+				15523DCB1BD02234004925BE /* ZLPhotoPickerBrowserPhotoView.m */,
+				15523DCC1BD02234004925BE /* ZLPhotoPickerCustomToolBarView.h */,
+				15523DCD1BD02234004925BE /* ZLPhotoPickerCustomToolBarView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15523DCE1BD02234004925BE /* ZLPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				15523DCF1BD02234004925BE /* Models */,
+				15523DD61BD02234004925BE /* ViewControllers */,
+				15523DDD1BD02234004925BE /* Views */,
+			);
+			path = ZLPhotoPicker;
+			sourceTree = "<group>";
+		};
+		15523DCF1BD02234004925BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15523DD01BD02234004925BE /* ZLPhotoAssets.h */,
+				15523DD11BD02234004925BE /* ZLPhotoAssets.m */,
+				15523DD21BD02234004925BE /* ZLPhotoPickerDatas.h */,
+				15523DD31BD02234004925BE /* ZLPhotoPickerDatas.m */,
+				15523DD41BD02234004925BE /* ZLPhotoPickerGroup.h */,
+				15523DD51BD02234004925BE /* ZLPhotoPickerGroup.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		15523DD61BD02234004925BE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				15523DD71BD02234004925BE /* ZLPhotoPickerAssetsViewController.h */,
+				15523DD81BD02234004925BE /* ZLPhotoPickerAssetsViewController.m */,
+				15523DD91BD02234004925BE /* ZLPhotoPickerGroupViewController.h */,
+				15523DDA1BD02234004925BE /* ZLPhotoPickerGroupViewController.m */,
+				15523DDB1BD02234004925BE /* ZLPhotoPickerViewController.h */,
+				15523DDC1BD02234004925BE /* ZLPhotoPickerViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		15523DDD1BD02234004925BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15523DDE1BD02234004925BE /* ZLPhotoPickerCollectionView.h */,
+				15523DDF1BD02234004925BE /* ZLPhotoPickerCollectionView.m */,
+				15523DE01BD02234004925BE /* ZLPhotoPickerCollectionViewCell.h */,
+				15523DE11BD02234004925BE /* ZLPhotoPickerCollectionViewCell.m */,
+				15523DE21BD02234004925BE /* ZLPhotoPickerFooterCollectionReusableView.h */,
+				15523DE31BD02234004925BE /* ZLPhotoPickerFooterCollectionReusableView.m */,
+				15523DE41BD02234004925BE /* ZLPhotoPickerGroupTableViewCell.h */,
+				15523DE51BD02234004925BE /* ZLPhotoPickerGroupTableViewCell.m */,
+				15523DE61BD02234004925BE /* ZLPhotoPickerImageView.h */,
+				15523DE71BD02234004925BE /* ZLPhotoPickerImageView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15523DE91BD02234004925BE /* DACircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				15523DEA1BD02234004925BE /* DACircularProgress */,
+			);
+			path = DACircularProgress;
+			sourceTree = "<group>";
+		};
+		15523DEA1BD02234004925BE /* DACircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				15523DEB1BD02234004925BE /* DACircularProgressView.h */,
+				15523DEC1BD02234004925BE /* DACircularProgressView.m */,
+				15523DED1BD02234004925BE /* DALabeledCircularProgressView.h */,
+				15523DEE1BD02234004925BE /* DALabeledCircularProgressView.m */,
+			);
+			path = DACircularProgress;
 			sourceTree = "<group>";
 		};
 		15CC34191BC858F6007FEBD3 /* SDWebImage */ = {
@@ -736,6 +1092,10 @@
 				15FDBD311BC4357700B05109 /* TSPopView.m */,
 				15EDFAB61BC6D4AA00259791 /* UIWindow+enterRooterConllor.h */,
 				15EDFAB71BC6D4AA00259791 /* UIWindow+enterRooterConllor.m */,
+				15523D9A1BCF55DA004925BE /* AFHRequestHttp.h */,
+				15523D9B1BCF55DA004925BE /* AFHRequestHttp.m */,
+				15523DA11BCF5C99004925BE /* TSConst.h */,
+				15523DA21BCF5C99004925BE /* TSConst.m */,
 			);
 			name = Base;
 			path = Other/Base;
@@ -754,6 +1114,8 @@
 		15FDBD341BC493A700B05109 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				154420091BCEC9B00078400D /* SendWeiboViewController.h */,
+				1544200A1BCEC9B00078400D /* SendWeiboViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -770,6 +1132,8 @@
 			children = (
 				15FDBD371BC493EE00B05109 /* SendWebView.h */,
 				15FDBD381BC493EE00B05109 /* SendWebView.m */,
+				15523E0D1BD027EF004925BE /* SendImageView.h */,
+				15523E0E1BD027EF004925BE /* SendImageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -859,6 +1223,7 @@
 				150FAC661BCCAC8E00B98126 /* emojiInfo.plist in Resources */,
 				150FAC671BCCAC8E00B98126 /* lxhInfo.plist in Resources */,
 				15077D001BC2E74800616E47 /* LaunchScreen.xib in Resources */,
+				15523E091BD02234004925BE /* ZLPhotoLib.bundle in Resources */,
 				15F110911BC979E700D3BCF3 /* weiboImageView.xib in Resources */,
 				150FAC651BCCAC8E00B98126 /* defaultInfo.plist in Resources */,
 				15CC34861BC8AA91007FEBD3 /* MJRefresh.bundle in Resources */,
@@ -883,22 +1248,33 @@
 			files = (
 				15CC34451BC858F6007FEBD3 /* UIImage+GIF.m in Sources */,
 				15CC34821BC8AA91007FEBD3 /* MJRefreshBackStateFooter.m in Sources */,
+				15523DF21BD02234004925BE /* ZLCamera.m in Sources */,
+				15523DF01BD02234004925BE /* UIImage+ZLPhotoLib.m in Sources */,
 				154B112F1BC34D180018C96E /* TSSeachController.m in Sources */,
 				151B46021BC9DF5200E22DEE /* HZPhotoBrowser.m in Sources */,
 				154B11321BC36AAF0018C96E /* HomePageController.m in Sources */,
 				15CC347C1BC8AA91007FEBD3 /* MJRefreshHeader.m in Sources */,
 				15E73C711BC5EAA1004EB2B5 /* ArchiveModel.m in Sources */,
 				151B46011BC9DF5200E22DEE /* HZIndicatorView.m in Sources */,
+				1544200B1BCEC9B00078400D /* SendWeiboViewController.m in Sources */,
+				15523DF31BD02234004925BE /* ZLCameraImageView.m in Sources */,
 				15CC34801BC8AA91007FEBD3 /* MJRefreshBackGifFooter.m in Sources */,
+				15523DF61BD02234004925BE /* ZLPhotoPickerBrowserPhoto.m in Sources */,
 				15CC344A1BC858F6007FEBD3 /* UIView+WebCacheOperation.m in Sources */,
+				15523E001BD02234004925BE /* ZLPhotoPickerGroupViewController.m in Sources */,
 				15CC347A1BC8AA91007FEBD3 /* MJRefreshComponent.m in Sources */,
 				15CC347D1BC8AA91007FEBD3 /* MJRefreshAutoGifFooter.m in Sources */,
 				151B46031BC9DF5200E22DEE /* HZPhotoBrowserView.m in Sources */,
+				15523E031BD02234004925BE /* ZLPhotoPickerCollectionViewCell.m in Sources */,
+				15523DFD1BD02234004925BE /* ZLPhotoPickerDatas.m in Sources */,
 				15CC347F1BC8AA91007FEBD3 /* MJRefreshAutoStateFooter.m in Sources */,
 				15E73C671BC5D035004EB2B5 /* AFHTTPRequestOperationManager.m in Sources */,
+				154420081BCE09440078400D /* WeiboDetailMedol.m in Sources */,
 				15E73C741BC5EAE5004EB2B5 /* RequestMedol.m in Sources */,
 				15E73C781BC6181D004EB2B5 /* WelComeViewController.m in Sources */,
 				154B11291BC330E60018C96E /* UIView+Extension.m in Sources */,
+				15523DFC1BD02234004925BE /* ZLPhotoAssets.m in Sources */,
+				15523DF71BD02234004925BE /* ZLPhotoPickerBrowserViewController.m in Sources */,
 				15CC343D1BC858F6007FEBD3 /* SDImageCache.m in Sources */,
 				15CC34811BC8AA91007FEBD3 /* MJRefreshBackNormalFooter.m in Sources */,
 				15E73C6B1BC5D035004EB2B5 /* AFURLConnectionOperation.m in Sources */,
@@ -907,12 +1283,14 @@
 				15F1108F1BC979DA00D3BCF3 /* weiboImageView.m in Sources */,
 				15CC34791BC8AA91007FEBD3 /* MJRefreshBackFooter.m in Sources */,
 				150FAC601BCCAAC600B98126 /* EmotionManager.m in Sources */,
+				15523DF51BD02234004925BE /* ZLCameraViewController.m in Sources */,
 				15E73C4E1BC5CE07004EB2B5 /* TSBaseMedol.m in Sources */,
 				15CC34481BC858F6007FEBD3 /* UIImageView+HighlightedWebCache.m in Sources */,
 				15CC34871BC8AA91007FEBD3 /* MJRefreshConst.m in Sources */,
 				15CC34881BC8AA91007FEBD3 /* UIScrollView+MJExtension.m in Sources */,
 				15CC34431BC858F6007FEBD3 /* SDWebImagePrefetcher.m in Sources */,
 				15CC347B1BC8AA91007FEBD3 /* MJRefreshFooter.m in Sources */,
+				15523E0F1BD027EF004925BE /* SendImageView.m in Sources */,
 				15CC34411BC858F6007FEBD3 /* SDWebImageDownloaderOperation.m in Sources */,
 				15E73C6C1BC5D035004EB2B5 /* AFURLRequestSerialization.m in Sources */,
 				1527D5191BCA0AE70042C89E /* WeiboImage.m in Sources */,
@@ -925,12 +1303,17 @@
 				15E73C681BC5D035004EB2B5 /* AFHTTPSessionManager.m in Sources */,
 				150FAC5D1BCCA9D700B98126 /* ToatterString.m in Sources */,
 				15EDFB511BC72E3000259791 /* WeiboMedol.m in Sources */,
+				15523DF91BD02234004925BE /* ZLPhotoPickerBrowserPhotoScrollView.m in Sources */,
+				15523E061BD02234004925BE /* ZLPhotoPickerImageView.m in Sources */,
 				15CC343F1BC858F6007FEBD3 /* SDWebImageDecoder.m in Sources */,
 				15E73C661BC5D035004EB2B5 /* AFHTTPRequestOperation.m in Sources */,
 				15CC348A1BC8AA91007FEBD3 /* UIView+MJExtension.m in Sources */,
 				154B11231BC2FDB70018C96E /* TSTabBarController.m in Sources */,
+				15523DFE1BD02234004925BE /* ZLPhotoPickerGroup.m in Sources */,
 				15CC34781BC8AA91007FEBD3 /* MJRefreshAutoFooter.m in Sources */,
+				15523D9C1BCF55DA004925BE /* AFHRequestHttp.m in Sources */,
 				15CC34491BC858F6007FEBD3 /* UIImageView+WebCache.m in Sources */,
+				15523E021BD02234004925BE /* ZLPhotoPickerCollectionView.m in Sources */,
 				15CC34421BC858F6007FEBD3 /* SDWebImageManager.m in Sources */,
 				15E73C6A1BC5D035004EB2B5 /* AFSecurityPolicy.m in Sources */,
 				15077CF51BC2E74800616E47 /* AppDelegate.m in Sources */,
@@ -938,18 +1321,33 @@
 				15E73C6E1BC5D035004EB2B5 /* AFURLSessionManager.m in Sources */,
 				15CC343B1BC858F6007FEBD3 /* MKAnnotationView+WebCache.m in Sources */,
 				15FDBD391BC493EE00B05109 /* SendWebView.m in Sources */,
+				154420051BCE048B0078400D /* WeiboDetailCell.m in Sources */,
 				15CC34171BC82B06007FEBD3 /* TSWeiboViewCell.m in Sources */,
 				15EDFAB81BC6D4AA00259791 /* UIWindow+enterRooterConllor.m in Sources */,
 				15CC34461BC858F6007FEBD3 /* UIImage+MultiFormat.m in Sources */,
 				15CC34471BC858F6007FEBD3 /* UIImage+WebP.m in Sources */,
+				15523DF81BD02234004925BE /* ZLPhotoPickerBrowserPhotoImageView.m in Sources */,
 				15CC34441BC858F6007FEBD3 /* UIButton+WebCache.m in Sources */,
+				15523DA31BCF5C99004925BE /* TSConst.m in Sources */,
+				15523E041BD02234004925BE /* ZLPhotoPickerFooterCollectionReusableView.m in Sources */,
+				15523E051BD02234004925BE /* ZLPhotoPickerGroupTableViewCell.m in Sources */,
+				15523DFF1BD02234004925BE /* ZLPhotoPickerAssetsViewController.m in Sources */,
+				15523E071BD02234004925BE /* DACircularProgressView.m in Sources */,
 				15FDBD321BC4357700B05109 /* TSPopView.m in Sources */,
+				15523DFA1BD02234004925BE /* ZLPhotoPickerBrowserPhotoView.m in Sources */,
+				15523E081BD02234004925BE /* DALabeledCircularProgressView.m in Sources */,
+				15523DA01BCF5B99004925BE /* MBProgressHUD.m in Sources */,
 				154B112C1BC349ED0018C96E /* TSSeaachFieild.m in Sources */,
 				154913761BC59BD5002F16FC /* WebRequestController.m in Sources */,
+				15523E011BD02234004925BE /* ZLPhotoPickerViewController.m in Sources */,
 				15CC34831BC8AA91007FEBD3 /* MJRefreshGifHeader.m in Sources */,
 				15E73C6D1BC5D035004EB2B5 /* AFURLResponseSerialization.m in Sources */,
 				15077CF21BC2E74800616E47 /* main.m in Sources */,
+				15523DF41BD02234004925BE /* ZLCameraView.m in Sources */,
+				15523DFB1BD02234004925BE /* ZLPhotoPickerCustomToolBarView.m in Sources */,
 				15EDFB541BC7337B00259791 /* UserMedol.m in Sources */,
+				15523DF11BD02234004925BE /* UIView+ZLExtension.m in Sources */,
+				154420021BCDFD780078400D /* TSWeiboDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

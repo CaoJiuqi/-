@@ -16,4 +16,12 @@
 
 /*请求微博数据*/
 #define TSWeiboUrl   @"https://api.weibo.com/2/statuses/friends_timeline.json"
+
+/*请求微博详情数据*/
+#define TSWeiBoDetailUrl @"https://api.weibo.com/2/comments/show.json"
+
+
+/* 发送一条微博信息*/
+#define TSendWeiboUrl @"https://api.weibo.com/2/statuses/update.json"
+
 #endif
