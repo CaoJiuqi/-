@@ -205,7 +205,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="WeiboDetailCell" selectionStyle="default" indentationWidth="10" rowHeight="196" id="sft-SC-NOY" customClass="WeiboDetailCell">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="WeiboDetailCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeiboDetailCell" rowHeight="196" id="sft-SC-NOY" customClass="WeiboDetailCell">
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sft-SC-NOY" id="rHe-TA-cNj">

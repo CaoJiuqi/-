@@ -28,7 +28,6 @@ static NSString *weiboCewllID = @"WeiboViewCell";
 @implementation TSWeiboDetailViewController
 
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -78,7 +77,7 @@ static NSString *weiboCewllID = @"WeiboViewCell";
     
 
    [AFHRequestHttp requestURL:TSWeiBoDetailUrl parameters:dic requestType:RequestISGET success:^(id result) {
-       NSLog(@"请求成功");
+               NSLog(@"请求成功");
               [self saveDataModelwithDictary:result];
 
     } failure:^(id error) {
@@ -143,6 +142,7 @@ static NSString *weiboCewllID = @"WeiboViewCell";
     
     WeiboDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:commentCellID forIndexPath:indexPath];
 
+    
     cell.medol = self.commentsMedolArray[indexPath.row];
     return cell;
 }

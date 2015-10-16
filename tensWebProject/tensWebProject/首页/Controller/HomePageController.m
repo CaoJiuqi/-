@@ -35,7 +35,7 @@
 @implementation HomePageController
 
 
-static NSString *cellID = @"TSWeiboViewCell";
+static NSString *cellID = @"WeiboViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -71,7 +71,6 @@ static NSString *cellID = @"TSWeiboViewCell";
 
     WeiboMedol *weibomodel =[self.weiboMedolArray firstObject ];
     if (weibomodel) {
-        
         [dic setObject:weibomodel.idstr forKey:@"since_id" ];
     }
     
@@ -162,12 +161,11 @@ static NSString *cellID = @"TSWeiboViewCell";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
     NSLog(@"点击了");
-//    TSWeiboDetailViewController *detailCV = [self.storyboard instantiateViewControllerWithIdentifier:@"TSWeiboDetailViewController"];
-//    detailCV.medol = self.weiboMedolArray[indexPath.row];
-//    [self.navigationController pushViewController:detailCV animated:YES];
-//    
+    TSWeiboDetailViewController *detailCV = [self.storyboard instantiateViewControllerWithIdentifier:@"TSWeiboDetailViewController"];
+    detailCV.medol = self.weiboMedolArray[indexPath.row];
+    [self.navigationController pushViewController:detailCV animated:YES];
+
 }
 
 

@@ -62,15 +62,14 @@
 
 -(void)setWeiboMedol:(WeiboMedol *)weiboMedol
 {
+
     _weiboMedol = weiboMedol;
     [self setWeiboViews];
-    
-    // 有转发微博时再设置转发微博数据
+
+//     有转发微博时再设置转发微博数据
     if (_weiboMedol.retweetedWeibo != nil) {
         self.resetWeiboView.hidden = NO;
-        self.resetWeiboText.hidden = NO;
         [self setRetWeiboViews];
-        
     } else {
         self.resetWeiboView.hidden = YES;
     }
@@ -80,12 +79,14 @@
 #pragma mark -- 显示微博视图
 - (void)setWeiboViews
 {
-
     [self.headImageView sd_setImageWithURL:[NSURL URLWithString:_weiboMedol.user.profile_image_url]];
     self.UserNameLable.text = _weiboMedol.user.screen_name;
     self.timeLable.text = _weiboMedol.created_at;
     self.sourceLable.text = _weiboMedol.source;
-    self.contentTextview.attributedText = [ToatterString attributeStringfromString:_weiboMedol.text withFont:[UIFont systemFontOfSize:14]] ;
+    
+    NSAttributedString *textstr = [ToatterString attributeStringfromString:_weiboMedol.text withFont:[UIFont systemFontOfSize:14]] ;
+
+    self.contentTextview.attributedText = textstr;
     
     if ([_weiboMedol.reposts_count integerValue] > 0) {
         NSString *sharetitle=[NSString stringWithFormat:@"%@",_weiboMedol.reposts_count];
@@ -106,16 +107,27 @@
     [self.weiboImageView removeFromSuperview];
     
     // 添加图片视图
-    if (_weiboMedol.pic_urls.count > 0) {
+    if (_weiboMedol.pic_urls.count > 0 ) {
         self.contentTextview.hidden = NO;
+        self.bgImageView.hidden = NO;
         self.AllTextweiboView.hidden = YES;
         [self showWeiboImages:_weiboMedol.pic_urls withSuperView:self.bgImageView];
-    }else
+    }else if(_weiboMedol.retweetedWeibo == nil)
     {
         self.contentTextview.hidden = YES;
+        self.bgImageView.hidden = YES;
         self.AllTextweiboView.hidden = NO;
-        self.AllTextweiboView.attributedText =[ToatterString attributeStringfromString:_weiboMedol.text withFont:[UIFont systemFontOfSize:14]];
+        
+        self.AllTextweiboView.attributedText = textstr;
+
+    }else
+    {
+        self.AllTextweiboView.hidden = YES;
+        self.contentTextview.hidden = NO;
+        self.bgImageView.hidden = NO;
+    
     }
+    
         
 }
 
@@ -125,17 +137,16 @@
     NSString *retWeiboStr = [NSString stringWithFormat:@"@%@ %@",_weiboMedol.retweetedWeibo.user.screen_name, _weiboMedol.retweetedWeibo.text];
     //   添加属性化的内容
     self.resetWeiboText.attributedText = [ToatterString attributeStringfromString:retWeiboStr withFont:[UIFont systemFontOfSize:13]];
+    
     [self.weiboImageView removeFromSuperview];
     
-//    NSLog(@"=======%d",_weiboMedol.retweetedWeibo.pic_urls.count);
-    
     if (_weiboMedol.retweetedWeibo.pic_urls.count > 0) {
-        [self showWeiboImages:_weiboMedol.retweetedWeibo.pic_urls withSuperView:self.resetWeibobgImage];
+        self.resetWeibobgImage.hidden = NO;
         
+        [self showWeiboImages:_weiboMedol.retweetedWeibo.pic_urls withSuperView:self.resetWeibobgImage];
     }else
     {
-        self.resetWeiboView.hidden = YES;
-        NSLog(@"转载没有的图片");
+        self.resetWeibobgImage.hidden = YES;
 
     }
     
@@ -144,8 +155,6 @@
 #pragma mark -- 显示微博图片
 - (void)showWeiboImages:(NSArray *)pic_urls withSuperView:(UIView *)supView
 {
-
-    
     NSInteger count = pic_urls.count;
     if( count== 1 )
     {
@@ -175,6 +184,8 @@
 
 +(CGFloat)showrangHeight:(WeiboMedol *)medol 
 {
+    
+    
     // 计算微博文本的高度
     CGFloat textHeigth = [self setTextHeigth:medol withFont:[UIFont systemFontOfSize:14]];
     
@@ -190,7 +201,7 @@
         otherSpace += resetOtherSpace;
         
     }
-    return   textHeigth +imageHeight +otherSpace + resettextHeight;
+    return   textHeigth + otherSpace + resettextHeight + imageHeight;
 
 }
 

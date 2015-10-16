@@ -46,7 +46,6 @@
 
         imageView.imageURLs = _imageImageURLs;
 
-
         if (i >= _imageImageURLs.count) {
             imageView.hidden = YES;
         }

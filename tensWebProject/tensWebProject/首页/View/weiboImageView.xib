@@ -65,7 +65,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="292.5" y="-418.5"/>
         </view>
-        <view contentMode="scaleToFill" id="qAL-9e-Wi8" userLabel="otherBgImageView" customClass="weiboImageView">
+        <view clipsSubviews="YES" contentMode="scaleAspectFit" id="qAL-9e-Wi8" userLabel="otherBgImageView" customClass="weiboImageView">
             <rect key="frame" x="0.0" y="0.0" width="442" height="313"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>

@@ -8,6 +8,7 @@
 
 #import "WeiboMedol.h"
 #import "UserMedol.h"
+#import "ToatterString.h"
 
 @implementation WeiboMedol
 
@@ -51,6 +52,7 @@
 
     
 }
+
 
 -(void)setSource:(NSString *)source
 {
