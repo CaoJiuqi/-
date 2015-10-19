@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EmoationView" id="6QB-cO-Ukn" customClass="EmoationView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEu-Bv-nMn">
+                    <rect key="frame" x="0.0" y="235" width="80" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="YXa-Y6-V5r"/>
+                    </constraints>
+                    <state key="normal" title="常用" backgroundImage="compose_emotion_table_right_normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="compose_emotion_table_left_selected">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="compose_emotion_table_left_selected"/>
+                    <connections>
+                        <action selector="emationselectbuttonAction:" destination="6QB-cO-Ukn" eventType="touchUpInside" id="BDJ-e8-WKY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Up7-Ve-uFf">
+                    <rect key="frame" x="80" y="235" width="80" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="cgM-jB-vmT"/>
+                    </constraints>
+                    <state key="normal" title="默认" backgroundImage="compose_emotion_table_right_normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="compose_emotion_table_left_selected"/>
+                    <connections>
+                        <action selector="emationselectbuttonAction:" destination="6QB-cO-Ukn" eventType="touchUpInside" id="vSB-Oo-qMG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IG-tv-fwy">
+                    <rect key="frame" x="160" y="235" width="80" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="ttH-ct-feY"/>
+                    </constraints>
+                    <state key="normal" title="Emoji" backgroundImage="compose_emotion_table_right_normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="compose_emotion_table_left_selected"/>
+                    <connections>
+                        <action selector="emationselectbuttonAction:" destination="6QB-cO-Ukn" eventType="touchUpInside" id="JVQ-Yl-FVF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOr-iS-0BB">
+                    <rect key="frame" x="240" y="235" width="80" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="hVS-7e-RVa"/>
+                    </constraints>
+                    <state key="normal" title="浪小花" backgroundImage="compose_emotion_table_right_normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="compose_emotion_table_left_selected"/>
+                    <connections>
+                        <action selector="emationselectbuttonAction:" destination="6QB-cO-Ukn" eventType="touchUpInside" id="jfW-ma-nXy"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EbF-3N-a55">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="235"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LhA-4w-8I5">
+                            <rect key="frame" x="0.0" y="198" width="320" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="bHX-b1-AiD"/>
+                            </constraints>
+                            <color key="pageIndicatorTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <color key="currentPageIndicatorTintColor" red="0.9728555485" green="0.63992253720000003" blue="0.14657666690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </pageControl>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TIt-oK-IiP">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="E1f-ij-xEa">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="6QB-cO-Ukn" id="BnE-sv-iiK"/>
+                                <outlet property="delegate" destination="6QB-cO-Ukn" id="Nsk-9p-AnZ"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LhA-4w-8I5" secondAttribute="trailing" id="8i8-qQ-33M"/>
+                        <constraint firstItem="TIt-oK-IiP" firstAttribute="top" secondItem="EbF-3N-a55" secondAttribute="top" id="AId-Fm-gsI"/>
+                        <constraint firstItem="TIt-oK-IiP" firstAttribute="leading" secondItem="EbF-3N-a55" secondAttribute="leading" id="JXi-F6-95p"/>
+                        <constraint firstItem="LhA-4w-8I5" firstAttribute="top" secondItem="TIt-oK-IiP" secondAttribute="bottom" id="JdA-r1-01I"/>
+                        <constraint firstAttribute="bottom" secondItem="LhA-4w-8I5" secondAttribute="bottom" id="f11-DY-nF9"/>
+                        <constraint firstAttribute="trailing" secondItem="TIt-oK-IiP" secondAttribute="trailing" id="q9Y-hB-qS1"/>
+                        <constraint firstItem="LhA-4w-8I5" firstAttribute="leading" secondItem="EbF-3N-a55" secondAttribute="leading" id="wMz-tt-QVm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yEu-Bv-nMn" firstAttribute="height" secondItem="0IG-tv-fwy" secondAttribute="height" id="3ij-YC-vMf"/>
+                <constraint firstAttribute="bottom" secondItem="0IG-tv-fwy" secondAttribute="bottom" id="AYT-EE-f7C"/>
+                <constraint firstItem="Up7-Ve-uFf" firstAttribute="leading" secondItem="yEu-Bv-nMn" secondAttribute="trailing" id="B4Q-eB-9pA"/>
+                <constraint firstItem="yEu-Bv-nMn" firstAttribute="height" secondItem="Up7-Ve-uFf" secondAttribute="height" id="EEC-aw-kUv"/>
+                <constraint firstItem="yEu-Bv-nMn" firstAttribute="width" secondItem="bOr-iS-0BB" secondAttribute="width" id="NIh-eU-vvi"/>
+                <constraint firstItem="yEu-Bv-nMn" firstAttribute="width" secondItem="Up7-Ve-uFf" secondAttribute="width" id="Pwi-sz-ak4"/>
+                <constraint firstAttribute="trailing" secondItem="bOr-iS-0BB" secondAttribute="trailing" id="QMl-gX-LeF"/>
+                <constraint firstAttribute="bottom" secondItem="Up7-Ve-uFf" secondAttribute="bottom" id="QRV-fS-TS4"/>
+                <constraint firstItem="yEu-Bv-nMn" firstAttribute="height" secondItem="bOr-iS-0BB" secondAttribute="height" id="Szd-lY-HPh"/>
+                <constraint firstItem="bOr-iS-0BB" firstAttribute="top" secondItem="EbF-3N-a55" secondAttribute="bottom" id="bBM-HE-iBr"/>
+                <constraint firstItem="0IG-tv-fwy" firstAttribute="leading" secondItem="Up7-Ve-uFf" secondAttribute="trailing" id="dmw-QU-6J5"/>
+                <constraint firstItem="yEu-Bv-nMn" firstAttribute="leading" secondItem="6QB-cO-Ukn" secondAttribute="leading" id="gXE-tv-d6D"/>
+                <constraint firstAttribute="bottom" secondItem="bOr-iS-0BB" secondAttribute="bottom" id="ilM-un-ilF"/>
+                <constraint firstAttribute="trailing" secondItem="EbF-3N-a55" secondAttribute="trailing" id="jtE-Oe-gye"/>
+                <constraint firstItem="EbF-3N-a55" firstAttribute="leading" secondItem="6QB-cO-Ukn" secondAttribute="leading" id="kpx-2b-xWg"/>
+                <constraint firstItem="yEu-Bv-nMn" firstAttribute="width" secondItem="0IG-tv-fwy" secondAttribute="width" id="oi4-Nu-uX3"/>
+                <constraint firstAttribute="bottom" secondItem="yEu-Bv-nMn" secondAttribute="bottom" id="pRR-7Y-DTE"/>
+                <constraint firstItem="EbF-3N-a55" firstAttribute="top" secondItem="6QB-cO-Ukn" secondAttribute="top" id="ptV-4k-jNJ"/>
+                <constraint firstItem="bOr-iS-0BB" firstAttribute="leading" secondItem="0IG-tv-fwy" secondAttribute="trailing" id="qwI-iZ-qr4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="emationConnectionView" destination="TIt-oK-IiP" id="Shd-LE-pjj"/>
+                <outlet property="pageControl" destination="LhA-4w-8I5" id="g4u-vN-Afb"/>
+            </connections>
+            <point key="canvasLocation" x="229" y="527"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="compose_emotion_table_left_selected" width="6" height="37"/>
+        <image name="compose_emotion_table_right_normal" width="6" height="37"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

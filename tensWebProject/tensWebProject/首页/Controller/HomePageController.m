@@ -162,9 +162,9 @@ static NSString *cellID = @"WeiboViewCell";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"点击了");
-    TSWeiboDetailViewController *detailCV = [self.storyboard instantiateViewControllerWithIdentifier:@"TSWeiboDetailViewController"];
-    detailCV.medol = self.weiboMedolArray[indexPath.row];
-    [self.navigationController pushViewController:detailCV animated:YES];
+//    TSWeiboDetailViewController *detailCV = [self.storyboard instantiateViewControllerWithIdentifier:@"TSWeiboDetailViewController"];
+//    detailCV.medol = self.weiboMedolArray[indexPath.row];
+//    [self.navigationController pushViewController:detailCV animated:YES];
 
 }
 

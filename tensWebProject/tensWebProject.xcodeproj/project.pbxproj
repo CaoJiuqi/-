@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15062AFD1BD1F93B00A734AF /* NSString+ToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 15062AFC1BD1F93B00A734AF /* NSString+ToPinyin.m */; };
 		15077CF21BC2E74800616E47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15077CF11BC2E74800616E47 /* main.m */; };
 		15077CF51BC2E74800616E47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15077CF41BC2E74800616E47 /* AppDelegate.m */; };
 		15077CFB1BC2E74800616E47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15077CF91BC2E74800616E47 /* Main.storyboard */; };
@@ -64,6 +65,16 @@
 		15523E081BD02234004925BE /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523DEE1BD02234004925BE /* DALabeledCircularProgressView.m */; };
 		15523E091BD02234004925BE /* ZLPhotoLib.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 15523DEF1BD02234004925BE /* ZLPhotoLib.bundle */; };
 		15523E0F1BD027EF004925BE /* SendImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15523E0E1BD027EF004925BE /* SendImageView.m */; };
+		155CE4D71BD2DACA00B74259 /* EmoationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 155CE4D61BD2DACA00B74259 /* EmoationView.m */; };
+		155CE4D91BD2DAE100B74259 /* EmoationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 155CE4D81BD2DAE100B74259 /* EmoationView.xib */; };
+		155CE4DB1BD2E09B00B74259 /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 155CE4DA1BD2E09B00B74259 /* emoji.plist */; };
+		155CE4DD1BD2E0AB00B74259 /* lxh.plist in Resources */ = {isa = PBXBuildFile; fileRef = 155CE4DC1BD2E0AB00B74259 /* lxh.plist */; };
+		15626B421BD3010D001169E2 /* EmationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15626B411BD3010D001169E2 /* EmationCell.m */; };
+		157258A61BD4A97200D9828C /* EmotionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 157258A51BD4A97200D9828C /* EmotionModel.m */; };
+		157258A91BD4A9CE00D9828C /* EmoationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 157258A81BD4A9CE00D9828C /* EmoationManager.m */; };
+		157258AF1BD4BC4D00D9828C /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 157258AE1BD4BC4D00D9828C /* NSString+Emoji.m */; };
+		157258B21BD4CA4D00D9828C /* UITextView+ToAttibuteStirng.m in Sources */ = {isa = PBXBuildFile; fileRef = 157258B11BD4CA4D00D9828C /* UITextView+ToAttibuteStirng.m */; };
+		157258B51BD4CAA600D9828C /* TSTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 157258B41BD4CAA600D9828C /* TSTextAttachment.m */; };
 		15CC34171BC82B06007FEBD3 /* TSWeiboViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CC34151BC82B06007FEBD3 /* TSWeiboViewCell.m */; };
 		15CC34181BC82B06007FEBD3 /* TSWeiboViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15CC34161BC82B06007FEBD3 /* TSWeiboViewCell.xib */; };
 		15CC343B1BC858F6007FEBD3 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CC341B1BC858F6007FEBD3 /* MKAnnotationView+WebCache.m */; };
@@ -101,6 +112,8 @@
 		15CC34881BC8AA91007FEBD3 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CC34731BC8AA91007FEBD3 /* UIScrollView+MJExtension.m */; };
 		15CC34891BC8AA91007FEBD3 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CC34751BC8AA91007FEBD3 /* UIScrollView+MJRefresh.m */; };
 		15CC348A1BC8AA91007FEBD3 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CC34771BC8AA91007FEBD3 /* UIView+MJExtension.m */; };
+		15E0E2A61BD1B2DF006F7DB2 /* FirendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E0E2A51BD1B2DF006F7DB2 /* FirendsCell.m */; };
+		15E0E2A91BD1B307006F7DB2 /* FirendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E0E2A81BD1B307006F7DB2 /* FirendsListViewController.m */; };
 		15E73C4E1BC5CE07004EB2B5 /* TSBaseMedol.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E73C4D1BC5CE07004EB2B5 /* TSBaseMedol.m */; };
 		15E73C661BC5D035004EB2B5 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E73C541BC5D035004EB2B5 /* AFHTTPRequestOperation.m */; };
 		15E73C671BC5D035004EB2B5 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E73C561BC5D035004EB2B5 /* AFHTTPRequestOperationManager.m */; };
@@ -134,6 +147,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15062AFB1BD1F93B00A734AF /* NSString+ToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ToPinyin.h"; sourceTree = "<group>"; };
+		15062AFC1BD1F93B00A734AF /* NSString+ToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ToPinyin.m"; sourceTree = "<group>"; };
 		15077CEC1BC2E74800616E47 /* tensWebProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tensWebProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15077CF01BC2E74800616E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15077CF11BC2E74800616E47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -247,6 +262,23 @@
 		15523DEF1BD02234004925BE /* ZLPhotoLib.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZLPhotoLib.bundle; sourceTree = "<group>"; };
 		15523E0D1BD027EF004925BE /* SendImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendImageView.h; sourceTree = "<group>"; };
 		15523E0E1BD027EF004925BE /* SendImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendImageView.m; sourceTree = "<group>"; };
+		155CE4D51BD2DACA00B74259 /* EmoationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmoationView.h; sourceTree = "<group>"; };
+		155CE4D61BD2DACA00B74259 /* EmoationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmoationView.m; sourceTree = "<group>"; };
+		155CE4D81BD2DAE100B74259 /* EmoationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmoationView.xib; sourceTree = "<group>"; };
+		155CE4DA1BD2E09B00B74259 /* emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoji.plist; sourceTree = "<group>"; };
+		155CE4DC1BD2E0AB00B74259 /* lxh.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lxh.plist; sourceTree = "<group>"; };
+		15626B401BD3010D001169E2 /* EmationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmationCell.h; sourceTree = "<group>"; };
+		15626B411BD3010D001169E2 /* EmationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmationCell.m; sourceTree = "<group>"; };
+		157258A41BD4A97200D9828C /* EmotionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionModel.h; sourceTree = "<group>"; };
+		157258A51BD4A97200D9828C /* EmotionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionModel.m; sourceTree = "<group>"; };
+		157258A71BD4A9CE00D9828C /* EmoationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmoationManager.h; sourceTree = "<group>"; };
+		157258A81BD4A9CE00D9828C /* EmoationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmoationManager.m; sourceTree = "<group>"; };
+		157258AD1BD4BC4D00D9828C /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		157258AE1BD4BC4D00D9828C /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		157258B01BD4CA4D00D9828C /* UITextView+ToAttibuteStirng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+ToAttibuteStirng.h"; sourceTree = "<group>"; };
+		157258B11BD4CA4D00D9828C /* UITextView+ToAttibuteStirng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ToAttibuteStirng.m"; sourceTree = "<group>"; };
+		157258B31BD4CAA600D9828C /* TSTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTextAttachment.h; sourceTree = "<group>"; };
+		157258B41BD4CAA600D9828C /* TSTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTextAttachment.m; sourceTree = "<group>"; };
 		15CC34141BC82B06007FEBD3 /* TSWeiboViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSWeiboViewCell.h; sourceTree = "<group>"; };
 		15CC34151BC82B06007FEBD3 /* TSWeiboViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSWeiboViewCell.m; sourceTree = "<group>"; };
 		15CC34161BC82B06007FEBD3 /* TSWeiboViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSWeiboViewCell.xib; sourceTree = "<group>"; };
@@ -321,6 +353,10 @@
 		15CC34751BC8AA91007FEBD3 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		15CC34761BC8AA91007FEBD3 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		15CC34771BC8AA91007FEBD3 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		15E0E2A41BD1B2DF006F7DB2 /* FirendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirendsCell.h; sourceTree = "<group>"; };
+		15E0E2A51BD1B2DF006F7DB2 /* FirendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirendsCell.m; sourceTree = "<group>"; };
+		15E0E2A71BD1B307006F7DB2 /* FirendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirendsListViewController.h; sourceTree = "<group>"; };
+		15E0E2A81BD1B307006F7DB2 /* FirendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirendsListViewController.m; sourceTree = "<group>"; };
 		15E73C4C1BC5CE07004EB2B5 /* TSBaseMedol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseMedol.h; sourceTree = "<group>"; };
 		15E73C4D1BC5CE07004EB2B5 /* TSBaseMedol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseMedol.m; sourceTree = "<group>"; };
 		15E73C531BC5D035004EB2B5 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -405,13 +441,13 @@
 		15077CEE1BC2E74800616E47 /* tensWebProject */ = {
 			isa = PBXGroup;
 			children = (
+				15077D261BC2F52700616E47 /* Main */,
 				15FDBD331BC493A700B05109 /* 发微博 */,
 				15FDBD2F1BC4354C00B05109 /* Base */,
 				15077D151BC2F50600616E47 /* 首页 */,
 				15077D211BC2F50600616E47 /* 消息 */,
 				15077D191BC2F50600616E47 /* 搜索 */,
 				15077D1D1BC2F50600616E47 /* 我的 */,
-				15077D261BC2F52700616E47 /* Main */,
 				15077CFC1BC2E74800616E47 /* Images.xcassets */,
 				15077CFE1BC2E74800616E47 /* LaunchScreen.xib */,
 				15077CEF1BC2E74800616E47 /* Supporting Files */,
@@ -423,6 +459,8 @@
 			isa = PBXGroup;
 			children = (
 				15077CF01BC2E74800616E47 /* Info.plist */,
+				155CE4DA1BD2E09B00B74259 /* emoji.plist */,
+				155CE4DC1BD2E0AB00B74259 /* lxh.plist */,
 				15077CF11BC2E74800616E47 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -1092,6 +1130,8 @@
 				15FDBD311BC4357700B05109 /* TSPopView.m */,
 				15EDFAB61BC6D4AA00259791 /* UIWindow+enterRooterConllor.h */,
 				15EDFAB71BC6D4AA00259791 /* UIWindow+enterRooterConllor.m */,
+				15062AFB1BD1F93B00A734AF /* NSString+ToPinyin.h */,
+				15062AFC1BD1F93B00A734AF /* NSString+ToPinyin.m */,
 				15523D9A1BCF55DA004925BE /* AFHRequestHttp.h */,
 				15523D9B1BCF55DA004925BE /* AFHRequestHttp.m */,
 				15523DA11BCF5C99004925BE /* TSConst.h */,
@@ -1116,6 +1156,8 @@
 			children = (
 				154420091BCEC9B00078400D /* SendWeiboViewController.h */,
 				1544200A1BCEC9B00078400D /* SendWeiboViewController.m */,
+				15E0E2A71BD1B307006F7DB2 /* FirendsListViewController.h */,
+				15E0E2A81BD1B307006F7DB2 /* FirendsListViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1123,6 +1165,16 @@
 		15FDBD351BC493A700B05109 /* Medoll */ = {
 			isa = PBXGroup;
 			children = (
+				157258AD1BD4BC4D00D9828C /* NSString+Emoji.h */,
+				157258AE1BD4BC4D00D9828C /* NSString+Emoji.m */,
+				157258A71BD4A9CE00D9828C /* EmoationManager.h */,
+				157258A81BD4A9CE00D9828C /* EmoationManager.m */,
+				157258A41BD4A97200D9828C /* EmotionModel.h */,
+				157258A51BD4A97200D9828C /* EmotionModel.m */,
+				157258B01BD4CA4D00D9828C /* UITextView+ToAttibuteStirng.h */,
+				157258B11BD4CA4D00D9828C /* UITextView+ToAttibuteStirng.m */,
+				157258B31BD4CAA600D9828C /* TSTextAttachment.h */,
+				157258B41BD4CAA600D9828C /* TSTextAttachment.m */,
 			);
 			path = Medoll;
 			sourceTree = "<group>";
@@ -1134,6 +1186,13 @@
 				15FDBD381BC493EE00B05109 /* SendWebView.m */,
 				15523E0D1BD027EF004925BE /* SendImageView.h */,
 				15523E0E1BD027EF004925BE /* SendImageView.m */,
+				15E0E2A41BD1B2DF006F7DB2 /* FirendsCell.h */,
+				15E0E2A51BD1B2DF006F7DB2 /* FirendsCell.m */,
+				155CE4D51BD2DACA00B74259 /* EmoationView.h */,
+				155CE4D61BD2DACA00B74259 /* EmoationView.m */,
+				155CE4D81BD2DAE100B74259 /* EmoationView.xib */,
+				15626B401BD3010D001169E2 /* EmationCell.h */,
+				15626B411BD3010D001169E2 /* EmationCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1218,6 +1277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155CE4D91BD2DAE100B74259 /* EmoationView.xib in Resources */,
 				15CC34181BC82B06007FEBD3 /* TSWeiboViewCell.xib in Resources */,
 				15077CFB1BC2E74800616E47 /* Main.storyboard in Resources */,
 				150FAC661BCCAC8E00B98126 /* emojiInfo.plist in Resources */,
@@ -1228,7 +1288,9 @@
 				150FAC651BCCAC8E00B98126 /* defaultInfo.plist in Resources */,
 				15CC34861BC8AA91007FEBD3 /* MJRefresh.bundle in Resources */,
 				151B46041BC9DF5200E22DEE /* whiteplaceholder.png in Resources */,
+				155CE4DD1BD2E0AB00B74259 /* lxh.plist in Resources */,
 				15077CFD1BC2E74800616E47 /* Images.xcassets in Resources */,
+				155CE4DB1BD2E09B00B74259 /* emoji.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1268,14 +1330,19 @@
 				15523E031BD02234004925BE /* ZLPhotoPickerCollectionViewCell.m in Sources */,
 				15523DFD1BD02234004925BE /* ZLPhotoPickerDatas.m in Sources */,
 				15CC347F1BC8AA91007FEBD3 /* MJRefreshAutoStateFooter.m in Sources */,
+				155CE4D71BD2DACA00B74259 /* EmoationView.m in Sources */,
 				15E73C671BC5D035004EB2B5 /* AFHTTPRequestOperationManager.m in Sources */,
 				154420081BCE09440078400D /* WeiboDetailMedol.m in Sources */,
 				15E73C741BC5EAE5004EB2B5 /* RequestMedol.m in Sources */,
+				157258A91BD4A9CE00D9828C /* EmoationManager.m in Sources */,
 				15E73C781BC6181D004EB2B5 /* WelComeViewController.m in Sources */,
 				154B11291BC330E60018C96E /* UIView+Extension.m in Sources */,
+				15626B421BD3010D001169E2 /* EmationCell.m in Sources */,
 				15523DFC1BD02234004925BE /* ZLPhotoAssets.m in Sources */,
+				15E0E2A91BD1B307006F7DB2 /* FirendsListViewController.m in Sources */,
 				15523DF71BD02234004925BE /* ZLPhotoPickerBrowserViewController.m in Sources */,
 				15CC343D1BC858F6007FEBD3 /* SDImageCache.m in Sources */,
+				157258B51BD4CAA600D9828C /* TSTextAttachment.m in Sources */,
 				15CC34811BC8AA91007FEBD3 /* MJRefreshBackNormalFooter.m in Sources */,
 				15E73C6B1BC5D035004EB2B5 /* AFURLConnectionOperation.m in Sources */,
 				15CC34841BC8AA91007FEBD3 /* MJRefreshNormalHeader.m in Sources */,
@@ -1296,10 +1363,12 @@
 				1527D5191BCA0AE70042C89E /* WeiboImage.m in Sources */,
 				15CC34401BC858F6007FEBD3 /* SDWebImageDownloader.m in Sources */,
 				15CC34891BC8AA91007FEBD3 /* UIScrollView+MJRefresh.m in Sources */,
+				157258A61BD4A97200D9828C /* EmotionModel.m in Sources */,
 				15CC347E1BC8AA91007FEBD3 /* MJRefreshAutoNormalFooter.m in Sources */,
 				15CC343C1BC858F6007FEBD3 /* NSData+ImageContentType.m in Sources */,
 				154B11261BC2FDFC0018C96E /* TSNavgationController.m in Sources */,
 				15CC34851BC8AA91007FEBD3 /* MJRefreshStateHeader.m in Sources */,
+				15062AFD1BD1F93B00A734AF /* NSString+ToPinyin.m in Sources */,
 				15E73C681BC5D035004EB2B5 /* AFHTTPSessionManager.m in Sources */,
 				150FAC5D1BCCA9D700B98126 /* ToatterString.m in Sources */,
 				15EDFB511BC72E3000259791 /* WeiboMedol.m in Sources */,
@@ -1307,6 +1376,7 @@
 				15523E061BD02234004925BE /* ZLPhotoPickerImageView.m in Sources */,
 				15CC343F1BC858F6007FEBD3 /* SDWebImageDecoder.m in Sources */,
 				15E73C661BC5D035004EB2B5 /* AFHTTPRequestOperation.m in Sources */,
+				15E0E2A61BD1B2DF006F7DB2 /* FirendsCell.m in Sources */,
 				15CC348A1BC8AA91007FEBD3 /* UIView+MJExtension.m in Sources */,
 				154B11231BC2FDB70018C96E /* TSTabBarController.m in Sources */,
 				15523DFE1BD02234004925BE /* ZLPhotoPickerGroup.m in Sources */,
@@ -1319,10 +1389,12 @@
 				15077CF51BC2E74800616E47 /* AppDelegate.m in Sources */,
 				15E73C691BC5D035004EB2B5 /* AFNetworkReachabilityManager.m in Sources */,
 				15E73C6E1BC5D035004EB2B5 /* AFURLSessionManager.m in Sources */,
+				157258AF1BD4BC4D00D9828C /* NSString+Emoji.m in Sources */,
 				15CC343B1BC858F6007FEBD3 /* MKAnnotationView+WebCache.m in Sources */,
 				15FDBD391BC493EE00B05109 /* SendWebView.m in Sources */,
 				154420051BCE048B0078400D /* WeiboDetailCell.m in Sources */,
 				15CC34171BC82B06007FEBD3 /* TSWeiboViewCell.m in Sources */,
+				157258B21BD4CA4D00D9828C /* UITextView+ToAttibuteStirng.m in Sources */,
 				15EDFAB81BC6D4AA00259791 /* UIWindow+enterRooterConllor.m in Sources */,
 				15CC34461BC858F6007FEBD3 /* UIImage+MultiFormat.m in Sources */,
 				15CC34471BC858F6007FEBD3 /* UIImage+WebP.m in Sources */,

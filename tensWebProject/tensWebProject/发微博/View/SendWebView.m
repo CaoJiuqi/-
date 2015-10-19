@@ -8,6 +8,7 @@
 
 #import "SendWebView.h"
 #import "UIView+Extension.h"
+#import "EmoationView.h"
 
 @interface SendWebView ()
 

@@ -16,8 +16,13 @@
 /*用户昵称*/
 @property (nonatomic,copy)NSString *screen_name;
 
+/*拼音*/
+@property (nonatomic,copy)NSString *pinyin;
+
+@property (nonatomic,copy)NSString *firstChar;
+
 /*个人描述*/
-//@property (nonatomic,copy)NSString *description;
+@property (nonatomic,copy)NSString *description;
 
 /*户头像地址（中图）*/
 @property (nonatomic,copy)NSString *profile_image_url;

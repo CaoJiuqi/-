@@ -23,5 +23,9 @@
 
 #import "TSConst.h"
 
+// 表情文件路径
+#define DefaultEmotionFileName @"defaultInfo"
+#define LxhEmotionFileName     @"lxhInfo"
+#define EmojiEmotionFileName   @"emojiInfo"
 
 #endif

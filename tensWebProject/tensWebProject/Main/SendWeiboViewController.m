@@ -14,9 +14,14 @@
 #import "ZLPhoto.h"
 #import "ZLPhotoAssets.h"
 #import "SendImageView.h"
+#import "FirendsListViewController.h"
+#import "TSNavgationController.h"
+#import "EmoationView.h"
+#import "EmotionModel.h"
+#import "NSString+Emoji.h"
+#import "UITextView+ToAttibuteStirng.h"
 
-
-@interface SendWeiboViewController () <ZLPhotoPickerViewControllerDelegate,delectDelgate>
+@interface SendWeiboViewController () <ZLPhotoPickerViewControllerDelegate,delectDelgate,EmotionKeyboardDelegate>
 {
     MBProgressHUD *_HUD;
 }
@@ -32,6 +37,8 @@
 
 @property (nonatomic,strong)SendImageView *photoImageView ;
 @property (nonatomic,strong)NSMutableArray *photos;
+
+@property (nonatomic,strong)EmoationView *emationView;
 
 @end
 
@@ -62,11 +69,18 @@
     [super viewDidLoad];
     [self.WeibotextView becomeFirstResponder];
 
+    /*监听text 输入的内容*/
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(TextViewchanged) name:UITextViewTextDidChangeNotification object:nil];
     // 监听键盘变化
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyBordChangeFram:) name:UIKeyboardDidChangeFrameNotification object:nil];
 
+
+
+
+
+    
 }
+
 
 #pragma mark --  监听方法
 -(void)TextViewchanged
@@ -114,7 +128,11 @@
         [self dismissViewControllerAnimated:YES completion:nil];
     }else
     {
-        [self senWeiBo];
+        if (self.photos.count != 0) {
+            [self sendImageWeiBo];
+        }else{
+            [self sendTextWeiBo];
+        }
     }
 }
 
@@ -124,7 +142,25 @@
     [self.photos removeObjectAtIndex:index];
 
 }
-
+#pragma mark--<EmotionKeyboardDelegate>
+-(void)clickEmotion:(EmotionModel *)emotion withIndex:(NSInteger)index
+{
+    if (index == 20) {
+        
+        [self.WeibotextView deleteBackward];
+        
+    } else {
+        
+        self.placeLable.hidden = YES;
+        
+        if (emotion.code) {
+            [self.WeibotextView insertText:emotion.code.emoji];
+            
+        } else {
+            [self.WeibotextView insertEmotion:emotion];
+        }
+    }
+}
 
 // 下面工具按钮的触发事件
 - (IBAction)toolButtonAction:(UIButton *)sender {
@@ -140,7 +176,7 @@
             break;
         }
         case KeyboardToolIsAt:{
-            
+//            [self sortFirends];
             break;
         }
         case KeyboardToolIsTopic:{
@@ -148,6 +184,7 @@
             break;
         }
         case KeyboardToolIsEmotion:{
+            [self creeateEmationView:sender];
             
             break;
         }
@@ -183,8 +220,38 @@
     
 }
 
+#pragma mark -- 查找联系人
+-(void)sortFirends
+{
+    FirendsListViewController *friendsVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FirendsListViewController"];
+    TSNavgationController *navagationVC = [[TSNavgationController alloc]initWithRootViewController:friendsVC];
+    
+    [self presentViewController:navagationVC animated:YES completion:nil];
 
--(void)senWeiBo
+
+
+}
+
+-(void)creeateEmationView:(UIButton *)emationkeybordButton
+{
+    
+    emationkeybordButton.selected = !emationkeybordButton.selected;
+    if (!_emationView) {
+
+        _emationView = [[[NSBundle mainBundle]loadNibNamed:@"EmoationView" owner:self options:nil]lastObject];
+        _emationView.delegate = self;
+    }
+    if (!self.WeibotextView.inputView) {
+        self.WeibotextView.inputView = _emationView;
+    }else{
+        self.WeibotextView.inputView = nil;
+    }
+    [self.WeibotextView  reloadInputViews];
+}
+
+#pragma mark--发送文字微博
+
+-(void)sendTextWeiBo
 {
     RequestMedol *medol = [ArchiveModel UnArichiveMedol];
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
@@ -208,6 +275,33 @@
     
 }
 
+
+#pragma mark -- 发送图片微博
+-(void)sendImageWeiBo
+{
+    RequestMedol *medol = [ArchiveModel UnArichiveMedol];
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+    [dictionary setValue:medol.access_token forKey:@"access_token"];
+    [dictionary setValue:self.WeibotextView.text forKey:@"status"];
+    
+    [self showHUD:@"正在发送"];
+    
+    [AFHRequestHttp POSTURL:TSendImageWeiboUrl parameters:dictionary datas:self.photos success:^(id result) {
+        [self hiddenHUD];
+        [self dismissViewControllerAnimated:YES completion:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:TSSendWeiboSuccessNotification object:nil];
+        [self showHUD:@"发送成功"];
+        
+        
+    } failure:^(id error) {
+        NSLog(@"errror:%@",error);
+        
+        
+    }];
+
+}
+
+
 -(SendImageView *)photoImageView
 {
 
@@ -215,7 +309,7 @@
         _photoImageView = [[SendImageView alloc]init];
         _photoImageView.delgate = self;
         [self.view addSubview:_photoImageView];
-        [self.view sendSubviewToBack:_photoImageView];
+//        [self.view sendSubviewToBack:_photoImageView];
 
     }
     return _photoImageView;

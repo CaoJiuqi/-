@@ -49,7 +49,6 @@
         
         UIButton *delectButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [delectButton setImage:[UIImage imageNamed:@"skin_delete_icon"] forState:UIControlStateNormal];
-        delectButton.backgroundColor = [UIColor redColor];
         [delectButton addTarget:self action:@selector(delectImageAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.delectButtonArray addObject:delectButton];
     }
@@ -75,6 +74,8 @@
         [imageView addSubview:button];
         
     }
+    
+    
 }
 #pragma mark --Action
 

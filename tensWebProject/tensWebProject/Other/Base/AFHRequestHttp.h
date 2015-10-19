@@ -31,6 +31,17 @@ typedef void(^FailureBlock)(id error);
  */
 + (void)requestURL:(NSString *)url parameters:(id)parames requestType:(RequestType)type success:(SuccessBlock)success failure:(FailureBlock)failure;
 
+/**
+ *  上传数据
+ *
+ *  @param URL     请求的链接地址
+ *  @param parems  请求参数
+ *  @param datas    上传的数据 NSData 格式数组
+ *  @param success 成功回调
+ *  @param failure 失败回调
+ */
++ (void)POSTURL:(NSString *)URL parameters:(id)parems datas:(NSArray *)datas success:(SuccessBlock)success failure:(FailureBlock)failure;
+
 
 @end
 
